@@ -1,0 +1,259 @@
+
+/* colores */
+:root {
+    --color-phone: #0d9488;
+    --color-location: #366fe8ff;
+    --color-whatsapp: #0fa95cff;
+
+    --color-font-p: #4b5563;
+    --color-border-grey: #9299a45d;
+    
+    --background-gradient-contact: linear-gradient(to right, #134e4a, #1e293b);
+}
+
+
+.section__inner {
+    gap: 5rem;
+}
+
+/* informacion de contacto */
+.data-contact__info{
+   flex: 1 1 calc(50% - 2.5rem);
+}
+
+.data-contact__text h2 {
+    margin-top: 0;
+    font-size: 3rem;
+}
+
+.data-contact__text p {
+    font-size: 1.6rem;
+    margin-top: 0;
+    margin-bottom: 3.2rem;
+
+    color: var(--color-font-p);
+}
+
+.data-contact__list {
+    padding: 0;
+}
+
+.data-contact__item {
+    list-style-type: none;;
+    display: flex;
+    border: 1px solid var(--color-border-grey);
+    
+    margin-bottom: 2.4rem;
+    border-radius: 0.8rem;
+    padding: 2.4rem;
+}
+
+.data-contact__item--phone {
+    border-left: 4px solid var(--color-phone);
+}
+
+.data-contact__item--email {
+    border-left: 4px solid var(--background-orange);
+}
+
+.data-contact__item--location {
+    border-left: 4px solid var(--color-location);
+}
+
+.data-contact__item--whatsapp {
+    border-left: 4px solid var(--color-whatsapp);
+}
+
+.data-contact__item-icon img {
+    padding: 1.2rem;
+    border-radius: 0.8rem;  
+}
+
+.data-contact__item-icon-phone {
+    background-color: #cafaf0;
+}
+
+.data-contact__item-icon-email {
+    background-color: #ffedd5;
+}
+
+.data-contact__item-icon-location {
+    background-color: #dbeafe;
+}
+
+.data-contact__item-icon-whatsapp {
+    background-color: #d8fbe4;
+}
+
+.data-contact__item-text {
+    margin-left: 1.6rem;
+    line-height: 1.5;
+    font-weight: 350;
+    font-style: italic;
+
+}
+
+.data-contact__item-text h3 {
+    font-size: 1.6rem;
+    margin: 0;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.data-contact__item-text p {
+    margin: 0;
+    color: var(--color-font-p);
+    /* font-style: normal; */
+}
+
+p.data-contact__item-text-phone {
+    margin-top: 4px;
+    color: var(--color-phone);
+    font-size: 1.4rem;
+}
+
+p.data-contact__item-text-email {
+    margin-top: 4px;
+    color: var(--color-font-orange);
+    font-size: 1.4rem;
+}
+
+p.data-contact__item-text-location {
+    margin-top: 4px;
+    color: var(--color-location);
+    font-size: 1.4rem;
+}
+
+p.data-contact__item-text-whatsapp {
+    margin-top: 4px;
+    color: var(--color-whatsapp);
+    font-size: 1.4rem;
+}
+
+
+/* formulario */
+
+.data-contact__form {
+    flex: 1 1 calc(50% - 2.5rem);
+    border: 1px solid var(--color-border-grey);
+    border-radius: 0.8rem;
+    box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.data-contact__form-text {
+    padding: 2.4rem;
+}
+
+.data-contact__form-text h3{
+    margin: 0;
+    font-size: 2.4rem;
+}
+
+.data-contact__form-text p {
+    margin: 6px 0 0 0;
+    font-size: 1.4rem;
+}
+
+.data-contact__form-group {
+    padding: 0 2.4rem 2.4rem 2.4rem;
+    line-height: 1.5;
+}
+
+.data-contact__form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.u-mt-24 {
+    margin-top: 2.4rem;
+}
+
+.data-contact__form-item label {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.data-contact__form-item input{
+    display: block;
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 0.5rem;
+    border: 1px solid var(--color-border-grey);
+    font-family: inherit;
+}
+
+.data-contact__form-item select {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 0.5rem;
+    border: 1px solid var(--color-border-grey);
+}
+
+.data-contact__form-item textarea {
+    display: block;
+    padding: 8px 12px;
+    width: 100%;
+    max-width: 100%;
+    resize: vertical;
+    border: 1px solid var(--color-border-grey);
+    font-family: inherit;
+    border-radius: 0.5rem;
+}
+
+.data-contact__form-checkbox-item  {
+    margin-bottom: 1rem;
+    display: flex;
+    align-content: center;
+    gap: 0.5rem;
+}
+
+.data-contact__form-checkbox-item label {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.data-contact__form-terms {
+    font-size: 1.2rem;
+    margin: 2.4rem 0 0 0;
+    color: #6b7280;
+    text-align: center;
+}
+
+.buttons-contact {
+    margin-top: 2.4rem;
+    display: flex;
+    gap: 2rem;
+    
+}
+
+.btn-contact {
+    flex: 1 1 50%;
+    padding: 8px 16px;
+    border-radius: 0.8rem;
+    border: 1px solid var(--color-border-grey);
+    font-family: inherit;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    line-height: 1.6;
+    transition: background-color 0.2s ease;
+}
+
+.btn-contact--primary {
+    background-color: var(--color-phone);
+    color: var(--color-secundary-font-white);
+}
+
+.btn-contact--primary:hover {
+    background-color: #0e7d74;
+}
+
+.btn-contact--secondary {
+    background-color: transparent;
+}
+
+.btn-contact--secondary:hover {
+    background-color: #f5f3f3;
+}

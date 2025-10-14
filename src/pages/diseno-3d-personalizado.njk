@@ -1,0 +1,400 @@
+---
+layout: "base.njk"
+title: "Diseño 3D Personalizado"
+styles:
+  - /styles/pages/diseno-3d-personalizado.css
+  - /styles/components/hero.css
+  - /styles/components/benefits.css
+  - /styles/components/contact-cta.css
+
+
+modifier: 'diseno-3d-perso'
+hero:
+  title: 'Impresión 3D <span class="orange">Personalizada<span>'
+  description: "Desde llaveros únicos hasta prototipos funcionales complejos. Transformamos tus ideas en objetos reales con la más alta calidad y precisión en impresión 3D."
+  badge: 'Fabricación Digital'
+  showImage: true
+  showbottoms: true
+  button1: 'Solicitar Impresión'
+  button2: 'Ver portafolio'
+  image: <img src="/assets/placeholder.svg" alt="">
+
+benefits:
+  title: '¿Por qué Elegir Nuestro Servicio?'
+  mainDescription: 'Ventajas que nos distinguen en el mercado de impresión 3D.'
+  items:
+    - subtitle: 'Entrega Rápida'
+      description: 'Tiempos de producción optimizados, desde 24 horas para piezas simples'
+      icon: '<img src="/assets/pages/diseno-3d-perso/icons/benefits-section/clock-icon.svg" alt="" aria-hidden="true" loading="lazy">'
+    - subtitle: 'Alta Precisión'
+      description: 'Resolución de hasta 0.1mm para detalles perfectos en cada impresión'
+      icon: '<img src="/assets/pages/diseno-3d-perso/icons/benefits-section/ruler-icon.svg" alt="" aria-hidden="true" loading="lazy">'
+    - subtitle: 'Calidad Garantizada'
+      description: 'Control de calidad riguroso y garantía en todos nuestros productos'
+      icon: '<img src="/assets/pages/diseno-3d-perso/icons/benefits-section/shield-icon.svg" alt="" aria-hidden="true" loading="lazy">'
+    - subtitle: 'Sin Archivo, Sin problema'
+      description: 'Creamos el diseño 3D por ti si solo tienes la idea o boceto'
+      icon: '<img src="/assets/pages/diseno-3d-perso/icons/benefits-section/bolt-icon.svg"" alt="" aria-hidden="true" loading="lazy">'
+
+check_icon: '<img src="/assets/pages/diseno-3d-perso/icons/shared/check-icon-green.svg" alt="" loading="lazy" aria-hidden="true">'
+check_icon_blue: '<img src="/assets/pages/diseno-3d-perso/icons/shared/check-icon-blue.svg" alt="" loading="lazy" aria-hidden="true>'
+---
+
+<section class="section__outer print-capabilities">
+  <div class="section__inner">
+    <div class="section__text section__text--diseno">
+      <h2>¿Qué podemos imprimir?</h2>
+      <p>Desde objetos decorativos hasta piezas funcionales, nuestra tecnología de impresión 3D puede materializar casi cualquier idea</p>
+    </div>
+
+    <div class="section__grid-print">
+
+      <div class="section__grid-print-item">
+        <div class="section__grid-print-header">
+          <div class="section__grid-print-icon section__grid-print-icon--heart">
+            <img src="/assets/pages/diseno-3d-perso/icons/print-capabilities-section/heart-icon.svg" alt="" aria-hidden="true" loading="lazy">
+          </div>
+          <h3>Personalización</h3>
+        </div>
+        <div class="section__grid-print-body">
+          <ul class="section__grid-body-ul">
+            <li class="section__grid-body-li">{{ check_icon | safe }} <span>LLaveros únicos</span></li>
+            <li class="section__grid-body-li">{{ check_icon | safe }} <span>Placas Identificativas</span></li>
+            <li class="section__grid-body-li">{{ check_icon | safe }} <span>Regalos personalizados</span></li>
+            <li class="section__grid-body-li">{{ check_icon | safe }} <span>Figuras a medida</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section__grid-print-item">
+        <div class="section__grid-print-header">
+          <div class="section__grid-print-icon section__grid-print-icon--bulb">
+            <img src="/assets/pages/diseno-3d-perso/icons/print-capabilities-section/bulb-icon.svg" alt="" aria-hidden="true" loading="lazy">
+          </div>
+          <h3>Prototipos</h3>
+        </div>
+        <div class="section__grid-print-body">
+          <ul class="section__grid-body-ul">
+            <li class="section__grid-body-li">{{ check_icon | safe }} <span>Modelos funcionales</span></li>
+            <li class="section__grid-body-li">{{ check_icon | safe }} <span>Pruebas de concepto</span></li>
+            <li class="section__grid-body-li">{{ check_icon | safe }} Validación de diseño</li>
+            <li class="section__grid-body-li">{{ check_icon | safe }} <span>Maquetas</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section__grid-print-item">
+        <div class="section__grid-print-header">
+          <div class="section__grid-print-icon section__grid-print-icon--wrench">
+            <img src="/assets/pages/diseno-3d-perso/icons/print-capabilities-section/wrench-icon.svg" alt="" aria-hidden="true" loading="lazy">
+          </div>
+          <h3>Piezas Funcionales</h3>
+        </div>
+        <div class="section__grid-print-body">
+          <ul class="section__grid-body-ul">
+            <li class="section__grid-body-li">{{ check_icon | safe }} <span>Engranajes</span></li>
+            <li class="section__grid-body-li">{{ check_icon | safe }} <span>Soportes</span></li>
+            <li class="section__grid-body-li">{{ check_icon | safe }} Herramientas</li>
+            <li class="section__grid-body-li">{{ check_icon | safe }} <span>Repuestos</span></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="section__grid-print-item">
+        <div class="section__grid-print-header">
+          <div class="section__grid-print-icon section__grid-print-icon--palette">
+            <img src="/assets/pages/diseno-3d-perso/icons/print-capabilities-section/palette-icon.svg" alt="" aria-hidden="true" loading="lazy">
+          </div>
+          <h3>Arte y Decoración</h3>
+        </div>
+        <div class="section__grid-print-body">
+          <ul class="section__grid-body-ul">
+            <li class="section__grid-body-li">{{ check_icon | safe }} <span>Esculturas</span></li>
+            <li class="section__grid-body-li">{{ check_icon | safe }} <span>Jarrones</span></li>
+            <li class="section__grid-body-li">{{ check_icon | safe }} Marcos</li>
+            <li class="section__grid-body-li">{{ check_icon | safe }} <span>Ornamentos</span></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section__outer section-material">
+  <div class="section__inner">
+    <div class="section__text">
+      <h2>Nuestro Material Especializado</h2>
+      <p>
+        Trabajamos con los mejores materiales del mercado para garantizar resultados excepcionales
+      </p>
+    </div>
+    <div class="section-material__container">
+
+      <div class="section-material__wrapper section-material__wrapper--green">
+        <div class="section-material__header">
+          <div class="section-material__icon section-material__icon--green">
+            <img src="/assets/pages/diseno-3d-perso/icons/material-section/layers-icon.svg" alt="" aria-hidden="true" loading="lazy">
+          </div>
+          <h3 class="section-material__title">PLA Premium</h3>
+          <p class="section-material__text">Ideal para prototipos, decoración y proyectos generales</p>
+          <span class="section-material__badge section-material__badge--green">Más Popular</span>
+        </div>
+        <div class="section-material__body">
+          <p class="section-material__body-text">Material <strong>biodegradable</strong> y fácil de trabajar, perfecto para la mayoría de proyectos. Ofrece acabados suaves y colores vibrantes con excelente presición dimensional.
+          </p>
+          <div class="section-material__body-features">
+            <div class="section-material__body-characteristics">
+              <h4>{{ check_icon | safe }} Características</h4>
+              <ul>
+                <li>{{ check_icon | safe}} Acabado suave</li>
+                <li>{{ check_icon | safe}} Biodegradable</li>
+                <li>{{ check_icon | safe}} Sin olores</li>
+                <li>{{ check_icon | safe}} Fácil impresión</li>
+              </ul>
+            </div>
+            <div class="section-material__body-colors">
+              <h4>
+                <img src="/assets/pages/diseno-3d-perso/icons/material-section/palette-icon.svg" alt="" aria-hidden="true" loading="lazy">
+                <span>Colores Disponibles</span>
+              </h4>
+              <div class="section-material__colors-grid">
+                <div class="section-material__color section-material__color--red"></div>
+                <div class="section-material__color section-material__color--blue"></div>
+                <div class="section-material__color section-material__color--black"></div>
+                <div class="section-material__color section-material__color--white"></div>
+                <div class="section-material__color section-material__color--pink"></div>
+                <div class="section-material__color section-material__color--yellow"></div>
+                <div class="section-material__color section-material__color--purple"></div>
+                <div class="section-material__color section-material__color--gray"></div>
+              </div>
+              <p class="section-material__colors-text">Más colores disponibles para que tu idea se vea como la imaginas</p>
+
+            </div>
+          </div>
+          <div class="section-material__body-purposes section-material__body-purposes--green">
+            <h4>Aplicaciones Ideales</h4>
+            <p>
+              Prototipos • Decoración • Llaveros • Figuras • Maquetas
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-material__wrapper section-material__wrapper--blue">
+        <div class="section-material__header">
+          <div class="section-material__icon section-material__icon--blue">
+            <img src="/assets/pages/diseno-3d-perso/icons/material-section/shield-icon.svg" alt="" aria-hidden="true" loading="lazy">
+          </div>
+            <h3 class="section-material__title">PETG Premium</h3>
+            <p class="section-material__text">Para proyectos que requieren resistencia y durabilidad superior</p>
+            <span class="section-material__badge section-material__badge--blue">Resistente</span>
+        </div>
+        <div class="section-material__body">
+          <p class="section-material__body-text">Material de <strong>alta resistencia</strong> con excelente claridad y resistencia química. Perfecto para piezas funcionales que requieren durabilidad y transparencia.</p>
+          <div class="section-material__body-features">
+            <div class="section-material__body-characteristics">
+              <h4>{{ check_icon_blue | safe }} Características</h4>
+              <ul>
+                <li>{{ check_icon_blue | safe}} Alta resistencia</li>
+                <li>{{ check_icon_blue | safe}} Transparente</li>
+                <li>{{ check_icon_blue | safe}} Resistente químico</li>
+                <li>{{ check_icon_blue | safe}} Reciclable</li>
+              </ul>
+            </div>
+            <div class="section-material__body-colors">
+              <h4>
+                <img src="/assets/pages/diseno-3d-perso/icons/material-section/palette-icon.svg" alt="" aria-hidden="true" loading="lazy">
+                <span>Colores Disponibles</span>
+              </h4>
+              <div class="section-material__colors-flex">
+                <div class="section-material__color section-material__color--white"></div>
+                <div class="section-material__color section-material__color--black"></div>
+              </div>
+              <div class="section-material__colors-names">
+                <span>Blanco</span>
+                <span>Negro</span>
+              </div>
+              <p class="section-material__colors-text">Colores clásicos para máxima versatilidad</p>
+            </div>
+          </div>
+          <div class="section-material__body-purposes section-material__body-purposes--blue">
+            <h4>Aplicaciones Ideales</h4>
+            <p>Piezas Funcionales • Envases • Prototipos Técnicos • Herramientas</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-material__selection">
+      <div class="section-material__selection-text">
+        <h3>¿Cuál Material Elegir?</h3>
+        <p>Te ayudamos a seleccionar el material perfecto para tu proyecto</p>
+      </div>
+
+      <div class="section-material__selection-wrapper">
+        <div class="section-material__selection-card section-material__selection-card--green">
+          <div class="section-material__selection-icon section-material__selection-icon--green">
+            <img src="/assets/pages/diseno-3d-perso/icons/material-section/layers-icon.svg" alt="" aria-hidden="true" loading="lazy">
+          </div>
+          <h3>Elige PLA si necesitas:</h3>
+          <ul>
+            <li>• Prototipos rápidos</li>
+            <li>• Objetos decorativos</li>
+            <li>• Variedad de colores</li>
+            <li>• Facilidad de impresión</li>
+            <li>• Material ecólogico</li>
+          </ul>
+        </div>
+        <div class="section-material__selection-card section-material__selection-card--blue">
+          <div class="section-material__selection-icon section-material__selection-icon--blue">
+            <img src="/assets/pages/diseno-3d-perso/icons/material-section/shield-icon.svg" alt="" aria-hidden="true" loading="lazy">
+          </div>
+          <h3>Elige PETG si necesitas:</h3>
+          <ul>
+            <li>• Piezas resistentes</li>
+            <li>• Transparencia</li>
+            <li>• Resistencia Química</li>
+            <li>• Uso funcional</li>
+            <li>• Durabilidad superior</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section__outer printing">
+  <div class="section__inner">
+    <div class="section__text">
+      <h2>Proceso de Impresión</h2>
+      <p>Desde tu idea hasta el producto final en simples pasos</p>
+    </div>
+    <div class="printing__container">
+      <div class="printing__process">
+
+        <div class="printing__process-item">
+          <div class="printing__process-number">01</div>
+          <div class="printing__process-text">
+            <div class="printing__process-header">
+              <img src="/assets/pages/diseno-3d-perso/icons/printing-section/bulb-icon.svg" alt="" aria-hidden="true" loading="lazy">
+              <h3>Envía tu Idea</h3>
+            </div>
+            <p class="printing__process-paragraph">
+              Comparte tu concepto, archivo 3D o simplemente describe lo que necesitas
+            </p>
+          </div>
+        </div>
+
+        <div class="printing__process-item">
+          <div class="printing__process-number">02</div>
+          <div class="printing__process-text">
+            <div class="printing__process-header">
+              <img src="/assets/pages/diseno-3d-perso/icons/printing-section/layers-icon.svg" alt="" aria-hidden="true" loading="lazy">
+              <h3>Diseño y Optimización</h3>
+            </div>
+            <p class="printing__process-paragraph">
+              Creamos o optimizamos el modelo 3D para impresión perfecta
+            </p>
+          </div>
+        </div>
+
+        <div class="printing__process-item">
+          <div class="printing__process-number">03</div>
+          <div class="printing__process-text">
+            <div class="printing__process-header">
+              <img src="/assets/pages/diseno-3d-perso/icons/printing-section/palette-icon.svg" alt="" aria-hidden="true" loading="lazy">
+              <h3>Selección de Material</h3>
+            </div>
+            <p class="printing__process-paragraph">
+              Te ayudamos a elegir el material ideal para tu proyecto
+            </p>
+          </div>
+        </div>
+
+        <div class="printing__process-item">
+          <div class="printing__process-number">04</div>
+          <div class="printing__process-text">
+            <div class="printing__process-header">
+              <img src="/assets/pages/diseno-3d-perso/icons/printing-section/printer-icon.svg" alt="" aria-hidden="true" loading="lazy">
+              <h3>Impresión de Calidad</h3>
+            </div>
+            <p class="printing__process-paragraph">
+              imprimimos con precisión usando tecnología de vanguardia
+            </p>
+          </div>
+        </div>
+
+        <div class="printing__process-item">
+          <div class="printing__process-number">05</div>
+          <div class="printing__process-text">
+            <div class="printing__process-header">
+              <img src="/assets/pages/diseno-3d-perso/icons/printing-section/package-icon.svg" alt="" aria-hidden="true" loading="lazy">
+              <h3>Acabado y Entrega</h3>
+            </div>
+            <p class="printing__process-paragraph">
+              Aplicamos acabados finales y entregamos tu producto listo
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="printing__request">
+        <div class="printing__request-image">
+          <img src="/assets/placeholder.svg" alt="" loading="lazy">
+        </div>
+        <form class="printing__request-form" action="#">
+          <div class="printing__form-header">
+            <h3>Solicitar Impresión 3D</h3>
+            <p>Cuéntanos qué quieres imprimir y te daremos una cotización</p>
+          </div>
+          <div class="printing__form-inputs">
+            <div class="printing__form-grid">
+              <div class="printing__form-item">
+                <label for="name" class="printing__form-label">Nombre *</label>
+                <input type="text" name="name" id="name" placeholder="Tu nombre" required>
+              </div>
+              <div class="printing__form-item">
+                <label for="phone" class="printing__form-label">Teléfono *</label>
+                <input type="tel" name="phone" id="phone" placeholder="+52 81 1234-5678" required>
+              </div>
+            </div>
+
+            <div class="printing__form-item">
+              <label for="email" class="printing__form-label">Correo *</label>
+              <input type="email" name="email" id="email" placeholder="Tu@email.com" required>
+            </div>
+
+            <div class="printing__form-grid">
+              <div class="printing__form-item">
+                <label for="material" class="printing__form-label">Selecciona tu Material *</label>
+                <select name="material" id="material" required>
+                  <option value="pla">PLA</option>
+                  <option value="petg">PETG</option>
+                  <option value="no-se" selected>No estoy seguro</option>
+                </select>
+              </div>
+              <div class="printing__form-item">
+                <label for="quantity" class="printing__form-label">Cantidad</label>
+                <input type="number" name="quantity" id="quantity" placeholder="1">
+              </div>
+            </div>
+
+            <div class="printing__form-item">
+              <label for="description" class="printing__form-label">Descripción del Proyecto *</label>
+              <textarea name="description" id="description" placeholder="Describe lo que quieres imprimir" rows="3" required></textarea>
+            </div>
+
+            <div class="printing__form-button">
+              <button type="submit">Solicitar Cotización</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+{% include "components/benefits.njk" %}

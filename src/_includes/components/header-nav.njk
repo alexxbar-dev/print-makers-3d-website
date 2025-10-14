@@ -1,0 +1,27 @@
+<header class="header">
+  <div class="header__inner">
+    <a href="/index.html" class="logo__wrapper">
+      <div class="logo__image">
+        <img src="/assets/logo/print-logo200x200.webp" alt="Logo de Print Makers 3D">
+      </div>
+      <strong>Print Makers 3D</strong>
+    </a>
+    <nav class="header__nav" role="navigation" aria-label="Menú principal">
+      <ul class="nav__list">
+        <li class="nav__item" role="menuitem">
+          <a href="/index.html" class="nav__link {% if page.url == '/' %}activo{% endif %}" aria-current="page">Inicio</a>
+        </li>
+        <li class="nav__item" role="menuitem">
+          <a href="/servicios-industriales/index.html" class="nav__link {% if page.url == '/servicios-industriales/' %}activo{% endif %}">Servicios Industriales</a>
+        </li>
+        <li class="nav__item" role="menuitem">
+          <a href="/diseno-3d-personalizado/index.html" class="nav__link {% if page.url == '/diseno-3d-personalizado/' %}activo{% endif %}">Diseño 3D Personalizado</a>
+        </li>
+        <li class="nav__item" role="menuitem">
+          <a href="/contacto/index.html" class="nav__link {% if page.url == '/contacto/' %}activo{% endif %}">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+

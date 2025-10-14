@@ -1,0 +1,198 @@
+---
+title: "Inicio"
+layout: "base.njk"
+styles:
+  - /styles/pages/index.css
+  - /styles/components/hero.css
+  - /styles/components/contact-cta.css
+  - /styles/components/benefits.css
+
+script: '<script src="/js/index.js" defer></script>'
+
+modifier: 'inicio'
+hero:
+  title: 'Transformamos tus <span class="blue">ideas</span> en <span class="orange"> moldes de precisión </span> y piezas funcionales en <span class="blue">3D</span>'
+  description: 'Especialistas en fabricación de moldes industriales para botellas y servicios completos de diseño e impresión 3D personalizada.'
+  badge: 'Fabricación de Precisión'
+  showImage: true
+  showbottoms: true
+  button1: 'Solicita una cotización'
+  button2: 'Ver portafolio'
+  image: '<img src="/assets/pages/index/images/printmakers3dcuadrada.png" alt="impresión 3D ">'
+  
+benefits:
+  title: '¿Por qué elegirnos?'
+  mainDescription: 'Comprometidos con la calidad, la innovación y la satisfacción del cliente. Nuestro equipo de expertos está listo para llevar tus proyectos al siguiente nivel.'
+  items:
+    - subtitle: 'Rapidez'
+      description: 'Tiempos de entrega optimizados sin comprometer la calidad'
+      icon: '<img src="/assets/pages/index/icons/benefits-section/clock-icon.svg" alt="" aria-hidden="true" loading="lazy">'
+    - subtitle: 'Precisión'
+      description: 'Tolerancias mínimas y acabados de alta calidad en cada proyecto'
+      icon: '<img src="/assets/pages/index/icons/benefits-section/target-icon.svg" alt="" aria-hidden="true" loading="lazy">'
+    - subtitle: 'Validación 3D'
+      description: 'Prototipado y validación antes de la fabricación final'
+      icon: '<img src="/assets/pages/index/icons/benefits-section/checks-icon.svg" alt="" aria-hidden="true" loading="lazy">'
+    - subtitle: 'Atención personalizada'
+      description: 'Acompañamiento completo desde la idea hasta el producto final'
+      icon: '<img src="/assets/pages/index/icons/benefits-section/users-icon.svg" alt="" aria-hidden="true"" loading="lazy">'
+
+maximizeIcon: '<img src="/assets/pages/index/icons/portfolio-section/maximize-icon.svg" alt="" aria-hidden="true" loading="lazy">'
+---
+
+<section class="services section__outer ">
+  <div class="section__inner">
+    <div class="section__text">
+      <h2>Nuestros Servicios Especializados</h2>
+      <p>Ofrecemos soluciones completas desde el diseño hasta la fabricación, adaptándonos a las necesidades
+        específicas de
+        cada proyecto.</p>
+    </div>
+    <!-- Tarjeta Moldes Industrial -->
+    <div class="services__card services__card--blue">
+      <div class="services__card-header">
+        <div class="services__card-icon">
+          <img src="/assets/pages/index/icons/services-section/gear2-blue-icon.svg" alt="" loading="lazy" aria-hidden="true">
+        </div>
+        <h3 class="services__card-title">Moldes Industriales</h3>
+      </div>
+      <p class="services__card-text">
+        Fabricación de moldes personalizados de alta precisión para la industria de botellas plásticas.
+      </p>
+      <ul class="services__card-list">
+        <li><img src="/assets/pages/index/icons/services-section/cad-icon.svg" alt="" aria-hidden="true" loading="lazy">Diseño CAD</li>
+        <li><img src="/assets/pages/index/icons/services-section/gear-icon.svg" alt=""aria-hidden="true" loading="lazy">Mecanizado CNC
+        </li>
+        <li><img src="/assets/pages/index/icons/services-section/target-icon.svg" alt="" aria-hidden="true" loading="lazy">Alta Precisión
+        </li>
+        <li><img src="/assets/pages/index/icons/services-section/wrench-icon.svg" alt="" aria-hidden="true" loading="lazy">Maquinaria
+          Avanzada
+        </li>
+      </ul>
+      <p class="services__card-text-secondary">
+        Fabricamos moldes personalizados a partir de tus diseños de botellas, garantizando la máxima calidad y
+        durabilidad en
+        cada proyecto.
+      </p>
+      <a href="#" class="services__card-button services__card-button--blue">Más información</a>
+    </div>
+    <!-- Tarjeta Impresión 3D -->
+    <div class="services__card services__card--green">
+      <div class="services__card-header">
+        <div class="services__card-icon">
+          <img src="/assets/pages/index/icons/services-section/printer-icon.svg" alt="" aria-hidden="true" loading="lazy">
+        </div>
+        <h3 class="services__card-title">Impresión 3D Personalizada</h3>
+      </div>
+      <p class="services__card-text">
+        Servicios completos de diseño e impresión 3D para prototipos y piezas funcionales.
+      </p>
+      <ul class="services__card-list">
+        <li><img src="/assets/pages/index/icons/services-section/cube-icon.svg" alt="" aria-hidden="true" loading="lazy">Llaveros</li>
+        <li><img src="/assets/pages/index/icons/services-section/gear2-green-icon.svg" alt="" aria-hidden="true" loading="lazy">Piezas
+          Funcionales
+        </li>
+        <li><img src="/assets/pages/index/icons/services-section/layers-icon.svg" alt="" aria-hidden="true" loading="lazy">Prototipos</li>
+        <li><img src="/assets/pages/index/icons/services-section/users-icon.svg" alt="" aria-hidden="true" loading="lazy">Ideas Personalizadas
+        </li>
+      </ul>
+      <p class="services__card-text-secondary">
+        Aceptamos tus ideas o diseños, incluso sin archivo. Nuestro equipo te ayuda a materializar cualquier
+        concepto en piezas
+        3D de alta calidad.
+      </p>
+      <a href="#" class="services__card-button services__card-button--green">Solicitar diseño</a>
+    </div>
+  </div>
+</section>
+
+<!-- Sección Portafolio -->
+<section class="section__outer portfolio" id="portfolio">
+  <div class="section__inner">
+    <div class="section__text">
+      <h2>Nuestro Portafolio</h2>
+      <p class="portfolio__p-custom">
+        Ejemplos de nuestros trabajos en moldes industriales y piezas 3D personalizadas.
+      </p>
+    </div>
+    <div class="portfolio__grid">
+      <figure class="portfolio__card">
+        <span class="portfolio__card-badge">Moldes Industriales</span>
+        <div class="portfolio__card-wrapper">
+          <img src="/assets/pages/index/images/portfolio/molde01.jpg" alt="Prototipos de piezas 3D" loading="lazy" class="portfolio__card-image">
+          <div class="portfolio__card-overlay">
+          {{ maximizeIcon | safe}}
+          </div>
+        </div>
+        <figcaption class="portfolio__card-footer">
+          Molde para Botella de Agua
+        </figcaption>
+      </figure>
+
+      <figure class="portfolio__card">
+        <span class="portfolio__card-badge">Impresión 3D</span>
+        <div class="portfolio__card-wrapper">
+          <img src="/assets/pages/index/images/portfolio/socialMedia.jpg" alt="Prototipos de piezas 3D" loading="lazy" class="portfolio__card-image">
+          <div class="portfolio__card-overlay">
+          {{ maximizeIcon | safe}}
+          </div>
+        </div>
+        <figcaption class="portfolio__card-footer">Llaveros Personalizados</figcaption>
+      </figure>
+
+      <figure class="portfolio__card">
+        <span class="portfolio__card-badge">Moldes Industriales</span>
+        <div class="portfolio__card-wrapper">
+          <img src="/assets/pages/index/images/portfolio/molde-render.jpg" alt="Prototipos de piezas 3D" loading="lazy" class="portfolio__card-image">
+          <div class="portfolio__card-overlay">
+          {{ maximizeIcon | safe}}
+          </div>
+        </div>
+        <figcaption class="portfolio__card-footer">Molde para Botella Deportiva</figcaption>
+      </figure>
+
+      <figure class="portfolio__card">
+        <span class="portfolio__card-badge">Impresión 3D</span>
+        <div class="portfolio__card-wrapper">
+          <img src="/assets/pages/index/images/portfolio/wheels-3d.jpg" alt="Prototipos de piezas 3D" loading="lazy" class="portfolio__card-image">
+          <div class="portfolio__card-overlay">
+          {{ maximizeIcon | safe}}
+          </div>
+        </div>
+        <figcaption class="portfolio__card-footer">Engranajes Funcionales</figcaption>
+      </figure>
+
+      <figure class="portfolio__card">
+        <span class="portfolio__card-badge">Moldes Industriales</span>
+        <div class="portfolio__card-wrapper">
+          <img src="/assets/pages/index/images/portfolio/bottles.png" alt="Prototipos de piezas 3D" loading="lazy" class="portfolio__card-image">
+          <div class="portfolio__card-overlay">
+          {{ maximizeIcon | safe}}
+          </div>
+        </div>
+        <figcaption class="portfolio__card-footer">Molde para Envase Cosmético</figcaption>
+      </figure>
+
+      <figure class="portfolio__card">
+        <span class="portfolio__card-badge">Impresión 3D</span>
+        <div class="portfolio__card-wrapper">
+          <img src="/assets/pages/index/images/portfolio/moto-helmets.jpg" alt="Prototipos de piezas 3D" loading="lazy" class="portfolio__card-image">
+          <div class="portfolio__card-overlay">
+          {{ maximizeIcon | safe}}
+          </div>
+        </div>
+        <figcaption class="portfolio__card-footer">Prototipos de Piezas 3D</figcaption>
+      </figure>
+
+    </div>
+  </div>
+</section>
+
+<div class="modal hidden">
+  <div class="modal__content">
+    <button class="modal__close">&times;</button>
+    <img src="" alt="" class="modal__img">
+  </div>
+</div>
+
+{% include "components/benefits.njk" %}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta
+      name="description"
+      content="Especialistas en fabricación de moldes industriales y servicios de impresión 3D personalizada. Transformamos tus ideas en piezas funcionales con precisión y calidad.">
+    <meta
+      name="keywords"
+      content="moldes industriales, impresión 3D, diseño 3D, fabricación de moldes, prototipos 3D, piezas funcionales,
+        personalización 3D, ingeniería de precisión, servicios de impresión 3D, diseño CAD, mecanizado CNC">
+    <meta name="author" content="Print Makers 3D">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"> 
+      
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="/styles/components/header-nav.css">
+    <link rel="stylesheet" href="/styles/components/footer.css">
+    {% if styles %}
+      {%- for style in styles -%}
+        <link rel="stylesheet" href="{{ style }}">
+      {% endfor %}
+    {%- endif -%}
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="/assets/favicons/print-icon-48.png" sizes="16x16"/>
+    <link rel="icon" type="image/png" href="/assets/favicons/print-icon-96.png" sizes="32x32"/>
+    <link rel="shortcut icon" href="/assets/favicons/favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png"/>
+    <meta name="apple-mobile-web-app-title" content="Print Makers 3D"/>
+    <link rel="manifest" href="/assets/favicons/site.webmanifest"/>
+
+    <title>
+      {{ title }} - Print Makers 3D
+    </title>
+  </head>
+  <body>
+    <!-- seccion header -->
+    {% include "components/header-nav.njk" %}
+
+    <!-- seccion hero -->
+    {% include "components/hero.njk" %}
+
+    <main>
+      {{ content | safe }}
+    </main>
+
+    <!-- seccion contacto -->
+    {% include "components/contact-cta.njk" %}
+    
+    <!-- seccion footer -->
+    {% include "components/footer.njk" %}
+    <script src="/js/nav-scroll.js" defer></script>
+    {% if script %}
+      {{ script | safe }}
+    {%- endif -%} 
+  </body>
+</html>

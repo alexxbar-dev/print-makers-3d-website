@@ -1,0 +1,188 @@
+---
+layout: "base.njk"
+title: "Contacto"
+styles:
+  - /styles/pages/contacto.css
+  - /styles/components/hero.css
+  - /styles/components/contact-cta.css
+
+modifier: 'contacto'
+hero:
+  title: 'Hablanos de tu <span class="orange">proyecto</span>'
+  description: 'Estamos aquí para ayudarte a materializar tus ideas. Contáctanos para una consulta gratuita y descubre cómo podemos hacer realidad tu proyecto con la más alta calidad.'
+  badge: 'Contáctanos'
+  showImage: false
+  showbottoms: false
+
+---
+
+{#  #}
+<section class="section__outer data-contact">
+  <div class="section__inner">
+    <div class="data-contact__info">
+      <div class="data-contact__text">
+        <h2>Información de Contacto</h2>
+        <p>Nuestro equipo está listo para atenderte. Elige el medio de contacto que prefieras o visítanos en nuestras
+          instalaciones.</p>
+      </div>
+      <ul class="data-contact__list">
+        <li class="data-contact__item data-contact__item--phone">
+          <div class="data-contact__item-icon ">
+            <img src="/assets/pages/contacto/icons/data-contact-section/call-icon.svg" alt="Icono de teléfono" class="data-contact__item-icon-phone">
+          </div>
+          <div class="data-contact__item-text">
+            <h3>Teléfono</h3>
+            <p>+52 814 175 3979</p>
+            <p>+52 814 282 3664</p>
+            <p class="data-contact__item-text-phone">Lun - Vie: 7:00 AM - 4:00 PM</p>
+          </div>
+        </li>
+        <li class="data-contact__item data-contact__item--email">
+          <div class="data-contact__item-icon">
+            <img src="/assets/pages/contacto/icons/data-contact-section/mail-icon.svg" alt="Icono de email" class="data-contact__item-icon-email">
+          </div>
+          <div class="data-contact__item-text">
+            <h3>Email</h3>
+            <p>contacto@printmakers.com</p>
+            <p>printmakers3d@Outlook.com</p>
+            <p class="data-contact__item-text-email">Respuesta en 24 horas</p>
+          </div>
+        </li>
+        <li class="data-contact__item data-contact__item--location">
+          <div class="data-contact__item-icon">
+            <img src="/assets/pages/contacto/icons/data-contact-section/location-icon.svg" alt="Icono de ubicación" class="data-contact__item-icon-location">
+          </div>
+          <div class="data-contact__item-text">
+            <h3>Ubicación</h3>
+            <p>Hidalgo 1012, Col. Centro,</p>
+            <p>Guadalupe, N.L., CP 67240</p>
+            <p class="data-contact__item-text-location">Visitas con cita previa</p>
+          </div>
+        </li>
+        <li class="data-contact__item data-contact__item--whatsapp">
+          <div class="data-contact__item-icon">
+            <img src="/assets/pages/contacto/icons/data-contact-section/whatsapp-icon.svg" alt="Icono de WhatsApp" class="data-contact__item-icon-whatsapp">
+          </div>
+          <div class="data-contact__item-text ">
+            <h3>WhatsApp</h3>
+            <p>+52 814 282 3664</p>
+            <p class="data-contact__item-text-whatsapp ">Atención inmediata</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    {# formulario #}
+    <form class="data-contact__form" action="#" method="POST">
+      <div class="data-contact__form-text">
+        <h3>Solicitar Cotización</h3>
+        <p>Completa el formulario y nos pondremos en contacto contigo en menos de 24 horas.</p>
+      </div>
+
+      <div class="data-contact__form-group">
+
+        <div class="data-contact__form-grid">
+          <div class="data-contact__form-item">
+            <label for="name">Nombre *</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre(s)" autocomplete="name" required>
+          </div>
+          <div class="data-contact__form-item">
+            <label for="lastName">Apellido *</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Tu apellido(s)" autocomplete="family-name" required>
+          </div>
+        </div>
+
+        <div class="data-contact__form-grid u-mt-24">
+          <div class="data-contact__form-item">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" placeholder="Tu@email.com" autocomplete="email" required>
+          </div>
+          <div class="data-contact__form-item">
+            <label for="phone">Teléfono *</label>
+            <input type="tel" id="phone" name="phone" placeholder="+52 81 1234-5678" autocomplete="tel" required>
+          </div>
+        </div>
+
+        <div class="data-contact__form-grid u-mt-24">
+          <div class="data-contact__form-item">
+            <label for="enterprise">Empresa</label>
+            <input type="text" id="enterprise" name="enterprise" placeholder="Nombre de tu empresa">
+          </div>
+          <div class="data-contact__form-item">
+            <label for="position">Cargo</label>
+            <input type="text" id="position" name="position" placeholder="Tu cargo o posición">
+          </div>
+        </div>
+
+        <div class="data-contact__form-item u-mt-24">
+          <label for="services">Servicio de Interés *</label>
+          <select id="services" name="services" required>
+            <option value="moldes-industriales" selected>Moldes Industriales</option>
+            <option value="diseno-3d">Diseño 3D</option>
+            <option value="impresion-3d-personalizada">Impresión 3D Personalizada</option>
+            <option value="prototipado">Prototipado</option>
+            <option value="consultoria-tecnica">Consultoría Técnica</option>
+            <option value="otros">Otro (especificar en mensaje)</option>
+          </select>
+        </div>
+
+        <div class="data-contact__form-grid u-mt-24">
+          <div class="data-contact__form-item">
+            <label for="budget">Presupuesto Estimado</label>
+            <select id="budget" name="budget">
+              <option value="" disabled selected>Rango de presupuesto</option>
+              <option value="5000-15000">$5,000 - $15,000 MXN</option>
+              <option value="15000-50000">$15,000 - $50,000 MXN</option>
+              <option value="50000-100000">$50,000 - $100,000 MXN</option>
+              <option value="mas-de-100000">Más de $100,000 MXN</option>
+              <option value="no-se">No estoy seguro</option>
+            </select>
+          </div>
+          <div class="data-contact__form-item">
+            <label for="deadline">Urgencia del Proyecto</label>
+            <select id="deadline" name="deadline">
+              <option value="" disabled selected>¿Qué tan urgente es?</option>
+              <option value="inmediato">Inmediato (1-2 semanas)</option>
+              <option value="corto-plazo">Corto Plazo (1-2 meses)</option>
+              <option value="mediano-plazo">Mediano Plazo (2-3 meses)</option>
+              <option value="flexible">Flexible (Más de 3 meses)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="data-contact__form-item u-mt-24">
+          <label for="description">Descripción del Proyecto *</label>
+          <textarea
+            id="description"
+            name="description"
+            placeholder="Describe detalladamente tu proyecto, especificaciones, cantidad, etc."
+            rows="6"
+            required></textarea>
+        </div>
+
+        <div class="data-contact__form-checkbox-group u-mt-24">
+          <div class="data-contact__form-checkbox-item">
+            <input type="checkbox" id="files" name="files">
+            <label for="files">Tengo archivos de referencia (planos, imágenes, modelos 3D)</label>
+          </div>
+          <div class="data-contact__form-checkbox-item ">
+            <input type="checkbox" id="visit" name="visit">
+            <label for="visit">
+              Me intersa agendar una visita a sus instalaciones</label>
+          </div>
+          <div class="data-contact__form-checkbox-item">
+            <input type="checkbox" id="newsletter" name="newsletter">
+            <label for="newsletter">Deseo recibir información sobre nuevos servicios y promociones</label>
+          </div>
+        </div>
+
+        <div class="buttons-contact">
+          <button type="submit" class="btn-contact btn-contact--primary"><img src="/assets/pages/contacto/icons/data-contact-section/send-icon.svg" alt="">Enviar Solicitud</button>
+          <button type="submit" class="btn-contact btn-contact--secondary"><img src="/assets/pages/contacto/icons/data-contact-section/calendar-icon.svg" alt="">Agendar Llamada</button>
+        </div>
+        <p class="data-contact__form-terms">Al enviar este formulario, aceptas nuestros términos de privacidad y el uso de tus datos para contactarte sobre tu
+          proyecto.</p>
+      </div>
+    </form>
+  </div>
+</section>

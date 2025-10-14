@@ -1,0 +1,24 @@
+/* seccion contacto */
+.contact-cta {
+  background: var(--background-gradient-main);
+}
+
+.contact-cta--contacto {
+  background: var(--background-gradient-contact); 
+}
+
+.contact-cta--diseno-3d-perso {
+  background: var(--background-gradient-diseno-3d-perso); 
+}
+
+.contact-cta--servicios-industriales {
+  background: var(--background-gradient-servicios); 
+}
+
+.contact-cta .contact-cta__h2-custom {
+  color: var(--color-secundary-font-white);
+}
+
+.contact-cta p.contact-cta__p-custom {
+  color: var(--color-secundary-font-white);
+}

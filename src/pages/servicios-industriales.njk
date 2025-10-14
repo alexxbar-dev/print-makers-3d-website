@@ -1,0 +1,481 @@
+---
+title: "Soluciones Industriales"
+layout: "base.njk"
+styles:
+  - /styles/pages/soluciones-industriales.css
+  - /styles/components/hero.css
+  - /styles/components/contact-cta.css
+
+script: '<script src="/js/soluciones-industriales.js" defer></script>'
+
+modifier: 'servicios-industriales'
+
+hero:
+  title: 'Moldes Industriales y <span class="orange">Diseño 3D</span>'
+  description: 'Combinamos la precisión de la fabricación industrial con la innovación del diseño digital. Desde moldes de alta precisión hasta modelos 3D complejos, ofrecemos soluciones integrales para materializar tus ideas más ambiciosas.'
+  badge: 'Servicios Profesionales'
+  showImage: false
+  showbottoms: true
+  button1: 'Explorar Servicios'
+  button2: 'Solicitar Consulta'
+
+icons:
+  rightArrow: '<img src="/assets/pages/servicios-industriales/icons/workflow-section/right-arrow-icon.svg" alt="" loading="lazy">'
+  checkIcon_blue: '<img src="/assets/pages/servicios-industriales/icons/industrial-services-section/check-icon-blue.svg" alt="" loading="lazy">'
+  checkIcon_green: '<img src="/assets/pages/servicios-industriales/icons/industrial-services-section/check-icon-green.svg" alt="" loading="lazy">'
+  wrenchIcon_blue: '<img src="/assets/pages/servicios-industriales/icons/detailed-services-section/wrench-icon.svg" alt="" loading="lazy">'
+  boxIcon_green: '<img src="/assets/pages/servicios-industriales/icons/detailed-services-section/box-icon.svg" alt="" loading="lazy">'
+  rotateIcon_green: '<img src="/assets/pages/servicios-industriales/icons/detailed-services-section/rotate-icon.svg" alt="" loading="lazy">'
+  eyeIcon_green: '<img src="/assets/pages/servicios-industriales/icons/detailed-services-section/eye-icon.svg" alt="" loading="lazy">'
+  bulbIcon_green: '<img src="/assets/pages/servicios-industriales/icons/detailed-services-section/bulb-icon.svg" alt="" loading="lazy">'
+  rulerIcon_green: '<img src="/assets/pages/servicios-industriales/icons/detailed-services-section/ruler-icon.svg" alt="" loading="lazy">'
+  layersIcon_green: '<img src="/assets/pages/servicios-industriales/icons/detailed-services-section/layers-icon.svg" alt="" loading="lazy">'
+  file_uploadIcon: '<img src="/assets/pages/servicios-industriales/icons/services-request-section/file-upload-icon.svg" alt="" loading="lazy">'
+---
+
+<section class="section__outer industrial-services">
+  <div class="section__inner">
+    <div class="section__text">
+      <h2 class="contact-cta__h2-custom">Nuestros Servicios Especializados</h2>
+      <p class="contact-cta__p-custom">
+        Dos áreas de expertise que se complementan perfectamente para ofrecer soluciones completas desde el concepto hasta la producción
+      </p>
+    </div>
+    <div class="industrial-services__cards-container">
+      <div class="industrial-services__card industrial-services__card--blue">
+
+        <div class="industrial-services__card-header">
+          <div class="industrial-services__card-icon industrial-services__card-icon--blue">
+            <img src="/assets/pages/servicios-industriales/icons/industrial-services-section/gear-icon.svg" alt="" loading="lazy">
+          </div>
+          <h3>Moldes Industriales</h3>
+          <p>
+            Fabricación de moldes de alta precisión para la industria de botellas plásticas
+          </p>
+        </div>
+        <div class="industrial-services__card-body">
+          <div class="industrial-services__card-grid">
+            <div class="industrial-services__grid-item industrial-services__grid-item--blue">
+              <h4>±0.05mm</h4>
+              <p>Tolerancia</p>
+            </div>
+            <div class="industrial-services__grid-item industrial-services__grid-item--blue">
+              <h4>15-30</h4>
+              <p>Días</p>
+            </div>
+            <div class="industrial-services__grid-item industrial-services__grid-item--blue">
+              <h4>500ml-5L</h4>
+              <p>Capacidad</p>
+            </div>
+            <div class="industrial-services__grid-item industrial-services__grid-item--blue">
+              <h4>2 años</h4>
+              <p>Garantía</p>
+            </div>
+          </div>
+
+          <div class="industrial-services__card-footer">
+            <h4>Tecnologías Utilizadas:</h4>
+            <ul class="industrial-services__footer-grid">
+              <li>{{ icons.checkIcon_blue | safe }} Diseño CAD</li>
+              <li>{{ icons.checkIcon_blue | safe }} Mecanizado CNC</li>
+              <li>{{ icons.checkIcon_blue | safe }} Acero P20/H13</li>
+              <li>{{ icons.checkIcon_blue | safe }} Control Numérico</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="industrial-services__card industrial-services__card--green">
+        <div class="industrial-services__card-header">
+          <div class="industrial-services__card-icon industrial-services__card-icon--green">
+            <img src="/assets/pages/servicios-industriales/icons/industrial-services-section/cad-icon.svg" alt="" loading="lazy">
+          </div>
+          <h3>Diseño 3D Profesional</h3>
+          <p>
+            Modelado digital avanzado desde conceptos hasta modelos listos para producción
+          </p>
+        </div>
+        <div class="industrial-services__card-body">
+          <div class="industrial-services__card-grid">
+             <div class="industrial-services__grid-item industrial-services__grid-item--green">
+              <h4>24-48h</h4>
+              <p>Entrega</p>
+             </div>
+            <div class="industrial-services__grid-item industrial-services__grid-item--green">
+              <h4>8+</h4>
+              <p>Software</p>
+            </div>
+            <div class="industrial-services__grid-item industrial-services__grid-item--green">
+              <h4>4K</h4>
+              <p>Renders</p>
+            </div>
+            <div class="industrial-services__grid-item industrial-services__grid-item--green">
+              <h4>100%</h4>
+              <p>Personalizado</p>
+            </div>
+          </div>
+          <div class="industrial-services__card-footer">
+            <h4>Servicios Incluidos:</h4>
+            <ul class="industrial-services__footer-grid">
+              <li>{{ icons.checkIcon_green | safe }} Modelado 3D</li>
+              <li>{{ icons.checkIcon_green | safe }} Renderizado</li>
+              <li>{{ icons.checkIcon_green | safe }} Planos Técnicos </li>
+              <li>{{ icons.checkIcon_green | safe }} Optimización</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section__outer detailed-services">
+  <div class="section__inner">
+    <div class="section__text">
+      <h2>Servicios Detallados</h2>
+      <p>
+        Explora en profundidad nuestras capacidades y procesos
+      </p>
+    </div>
+    <div class="detailed-services__container">
+      <div class="detailed-services__buttons" role="tablist">
+        <button class="detailed-services__button active" id="molds-button" role="tab" aria-selected="true" aria-controls="molds" >
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 21h18" />
+            <path d="M5 21v-12l5 4v-4l5 4h4" />
+            <path d="M19 21v-8l-1.436 -9.574a.5 .5 0 0 0 -.495 -.426h-1.145a.5 .5 0 0 0 -.494 .418l-1.43 8.582" />
+            <path d="M9 17h1" />
+            <path d="M14 17h1" />
+          </svg>
+          Moldes Industriales
+        </button>
+        <button class="detailed-services__button" id="design-button" aria-selected="false" aria-controls="design" role="tab">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layers h-5 w-5 text-green-600"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"></path><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"></path><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"></path></svg>
+          Diseño 3D
+        </button>
+      </div>
+
+      <div class="detailed-services__molds-wrapper" role="tabpanel" id="molds" aria-labelledby="molds-button" aria-hidden="false">
+        <div class="detailed-services__molds-process">
+          <h3>Proceso de Fabricación de Moldes</h3>
+
+          <div class="detailed-services__process-item">
+            <div class="detailed-services__process-number">01</div>
+            <div class="detailed-services__process-text">
+             <div class="detailed-services__process-header">
+              <img src="/assets/pages/servicios-industriales/icons/detailed-services-section/target-icon.svg" alt="">
+              <h4>Análisis Técnico</h4>
+             </div> 
+             <p class="detailed-services__process-description">
+              Evaluación detallada de especificaciones y viabilidad del proyecto
+             </p>
+            </div>
+          </div>
+
+          <div class="detailed-services__process-item">
+            <div class="detailed-services__process-number">02</div>
+            <div class="detailed-services__process-text">
+             <div class="detailed-services__process-header">
+              <img src="/assets/pages/servicios-industriales/icons/detailed-services-section/cad-icon.svg" alt="">
+              <h4>Diseño CAD Avanzado</h4>
+             </div> 
+             <p class="detailed-services__process-description">
+              Modelado 3D preciso con simulaciones de flujo y enfriamiento
+             </p>
+            </div>
+          </div>
+
+          <div class="detailed-services__process-item">
+            <div class="detailed-services__process-number">03</div>
+            <div class="detailed-services__process-text">
+             <div class="detailed-services__process-header">
+              <img src="/assets/pages/servicios-industriales/icons/detailed-services-section/gear-icon.svg" alt="">
+              <h4>Mecanizado CNC</h4>
+             </div> 
+             <p class="detailed-services__process-description">
+              Fabricación con maquinaria de 5 ejes y control numérico
+             </p>
+            </div>
+          </div>
+
+          <div class="detailed-services__process-item">
+            <div class="detailed-services__process-number">04</div>
+            <div class="detailed-services__process-text">
+             <div class="detailed-services__process-header">
+              <img src="/assets/pages/servicios-industriales/icons/detailed-services-section/check-icon-blue.svg" alt="">
+              <h4>Control de Calidad</h4>
+             </div> 
+             <p class="detailed-services__process-description">
+              Inspección dimensional y pruebas de funcionamiento
+             </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="detailed-services__molds-specs">
+          <img src="/assets/placeholder.svg" alt="" loading="lazy">
+          <div class="detailed-services__technical-specs">
+            <div class="detailed-services__specs-header">
+              {{ icons.wrenchIcon_blue | safe}}
+              <h3>Especificaciones Técnicas</h3>
+            </div>
+            <div class="detailed-services__specs-body">
+              <div class="detailed-services__specs-items">
+                <h4>Materiales:</h4>
+                <p>Acero P20, H13, S136</p>
+              </div>
+              <div class="detailed-services__specs-items">
+                <h4>Tolerancia:</h4>
+                <p>±0.05mm</p>
+              </div>
+              <div class="detailed-services__specs-items">
+                <h4>Acabado:</h4>
+                <p>Ra 0.8μm</p>
+              </div>
+              <div class="detailed-services__specs-items">
+                <h4>Capacidad:</h4>
+                <p>500 - 5L</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="detailed-services__design-wrapper hidden" id="design" role="tabpanel" aria-labelledby="design-button" aria-hidden="true">
+
+        <div class="detailed-services__design-item">
+          <div class="detailed-services__design-header">
+            <div class="detailed-services__design-header-icon">
+              {{icons.boxIcon_green | safe}}
+            </div>
+            <h3>Modelado Paramétrico</h3>
+            <p>Modelos 3D editables con parámetros controlables</p>
+          </div>
+          <div class="detailed-services__design-body">
+            <ul>
+              <li class="detailed-services__design-list-item">{{icons.checkIcon_green | safe}} <span>SolidWorks</span></li>
+              <li class="detailed-services__design-list-item">{{icons.checkIcon_green | safe}} <span>Fusion 360</span></li>
+              <li class="detailed-services__design-list-item">{{icons.checkIcon_green | safe}} <span>Modificaciones rápidas</span></li>
+              <li class="detailed-services__design-list-item">{{icons.checkIcon_green | safe}} <span>Historial de cambios</span></li>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="detailed-services__design-item">
+          <div class="detailed-services__design-header">
+            <div class="detailed-services__design-header-icon">
+              {{icons.rotateIcon_green | safe}}
+            </div>
+            <h3>Ingeniería Inversa</h3>
+            <p>Recreación digital de piezas físicas existentes</p>
+          </div>
+          <div class="detailed-services__design-body">
+            <ul>
+              <li class="detailed-services__design-list-item">{{icons.checkIcon_green | safe}} <span>Escaneo 3D</span></li>
+              <li class="detailed-services__design-list-item">{{icons.checkIcon_green | safe}} <span>Reconstrucción</li>
+              <li class="detailed-services__design-list-item">{{icons.checkIcon_green | safe}} <span>Optimización</li>
+              <li class="detailed-services__design-list-item">{{icons.checkIcon_green | safe}} <span>Documentacíon</li>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="detailed-services__design-item">
+          <div class="detailed-services__design-header">
+            <div class="detailed-services__design-header-icon">
+              {{icons.eyeIcon_green | safe}}
+            </div>
+            <h3>Renderizado Fotorrealista</h3>
+            <p>Visualizaciones de alta calidad para presentaciones</p>
+          </div>
+          <div class="detailed-services__design-body">
+            <ul>
+              <li class="detailed-services__design-list-item">{{icons.checkIcon_green | safe}} <span>KeyShot</span></li>
+              <li class="detailed-services__design-list-item">{{icons.checkIcon_green | safe}} <span>4K Resolution</span></li>
+              <li class="detailed-services__design-list-item">{{icons.checkIcon_green | safe}} <span>Animaciones</span></li>
+              <li class="detailed-services__design-list-item">{{icons.checkIcon_green | safe}} <span>Materiales realistas</li>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="detailed-services__design-item">
+          <div class="detailed-services__design-header">
+            <div class="detailed-services__design-header-icon">
+              {{icons.bulbIcon_green | safe}}
+            </div>
+            <h3>Proptotipado Virtual</h3>
+            <p>Validación de diseños antes de fabricación</p>
+          </div>
+          <div class="detailed-services__design-body">
+            <ul>
+              <li class="detailed-services__design-list-item">{{icons.checkIcon_green | safe}} <span>Simulaciones</span></li>
+              <li class="detailed-services__design-list-item">{{icons.checkIcon_green | safe}} <span>Análisis FEA</span></li>
+              <li class="detailed-services__design-list-item">{{icons.checkIcon_green | safe}} <span>Detección de errores</span></li>
+              <li class="detailed-services__design-list-item">{{icons.checkIcon_green | safe}} <span>Optimización</span></li>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="detailed-services__design-item">
+          <div class="detailed-services__design-header">
+            <div class="detailed-services__design-header-icon">
+              {{icons.rulerIcon_green | safe}}
+            </div>
+            <h3>Planos Técnicos</h3>
+            <p>Documentacíon completa para fabricación</p>
+          </div>
+          <div class="detailed-services__design-body">
+            <ul>
+              <li class="detailed-services__design-list-item">{{icons.checkIcon_green | safe}} <span>AutoCAD</span></li>
+              <li class="detailed-services__design-list-item">{{icons.checkIcon_green | safe}} <span>Dimensionado</span></li>
+              <li class="detailed-services__design-list-item">{{icons.checkIcon_green | safe}} <span>Tolerancias</span></li>
+              <li class="detailed-services__design-list-item">{{icons.checkIcon_green | safe}} <span>Listas materiales</span></li>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="detailed-services__design-item">
+          <div class="detailed-services__design-header">
+            <div class="detailed-services__design-header-icon">
+              {{icons.layersIcon_green | safe}}
+            </div>
+            <h3>Optimización 3D</h3>
+            <p>Preparación para impresión y fabricación</p>
+          </div>
+          <div class="detailed-services__design-body">
+            <ul>
+              <li class="detailed-services__design-list-item">{{icons.checkIcon_green | safe}} <span>Reducción polígonos</span></li>
+              <li class="detailed-services__design-list-item">{{icons.checkIcon_green | safe}} <span>Soportes</span></li>
+              <li class="detailed-services__design-list-item">{{icons.checkIcon_green | safe}} <span>Orientación</span></li>
+              <li class="detailed-services__design-list-item">{{icons.checkIcon_green | safe}} <span>Análisis</span></li>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section__outer  workflow">
+  <div class="section__inner">
+    <div class="section__text">
+      <h2>Flujo de Trabajo Integrado</h2>
+      <p>
+        Cómo combinamos diseño 3D y fabricación de moldes para resultados excepcionales
+      </p>
+    </div>
+    <div class="workflow__grid">
+      <div class="workflow__item">
+        <div class="workflow__icon workflow__icon--bulb">
+          <img src="/assets/pages/servicios-industriales/icons/workflow-section/bulb-icon.svg" alt="" loading="lazy">
+        </div>
+        <div class="workflow__badge">Concepto</div>
+        <h3>Idea Inicial</h3>
+        <p>Análisis de requerimientos y conceptualización</p>  
+        {{icons.rightArrow | safe}}
+      </div>
+      <div class="workflow__item">
+        <div class="workflow__icon workflow__icon--cad">
+          <img src="/assets/pages/servicios-industriales/icons/workflow-section/cad-icon.svg" alt="" loading="lazy">
+        </div>
+        <div class="workflow__badge">Diseño</div>
+        <h3>Modelo 3D</h3>
+        <p>Creación del modelo digital detallado</p>
+        {{icons.rightArrow | safe}}
+      </div>
+      <div class="workflow__item">
+        <div class="workflow__icon workflow__icon--eye">
+          <img src="/assets/pages/servicios-industriales/icons/workflow-section/eye-icon.svg" alt="" loading="lazy">
+        </div>
+        <div class="workflow__badge">Validación</div>
+        <h3>Simulación</h3>
+        <p>Pruebas virtuales y optimización</p>
+        {{icons.rightArrow | safe}}
+      </div>
+      <div class="workflow__item">
+        <div class="workflow__icon workflow__icon--gear">
+          <img src="/assets/pages/servicios-industriales/icons/workflow-section/gear-icon.svg" alt="" loading="lazy">
+        </div>
+        <div class="workflow__badge">Fabricación</div>
+        <h3>Producción</h3>
+        <p>Mecanizado CNC del molde final</p>
+        {{icons.rightArrow | safe}}
+      </div>
+      <div class="workflow__item">
+        <div class="workflow__icon workflow__icon--check">
+          <img src="/assets/pages/servicios-industriales/icons/workflow-section/check-icon.svg" alt="" loading="lazy">
+        </div>
+        <div class="workflow__badge">Entrega</div>
+        <h3>Producto Final</h3>
+        <p>Control de calidad y entrega</p>  
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section__outer services-request">
+  <div class="section__inner">
+    <form action="#" class="services-request__form">
+      <div class="services-request__form-header">
+        <h3>Solicitar Cotización Integral</h3>
+        <p>Cuéntanos sobre tu proyecto y te proporcionaremos una solución completa</p>
+      </div>
+      <div class="services-request__form-inputs">
+        <div class="services-request__form-grid">
+          <div class="services-request__form-item">
+            <label for="name">Nombre Completo *</label>
+            <input type="text" name="name" id="name" placeholder="Tu nombre" required>
+          </div>
+          <div class="services-request__form-item">
+            <label for="company">Empresa</label>
+            <input type="text" name="company" id="company" placeholder="Nombre de la empresa">
+          </div>
+        </div>
+        <div class="services-request__form-grid">
+          <div class="services-request__form-item">
+            <label for="email">Email *</label>
+            <input type="email" name="email" id="email" placeholder="Tu@email.com" required>
+          </div>
+          <div class="services-request__form-item">
+            <label for="phone">Teléfono *</label>
+            <input type="tel" name="phone" id="phone" placeholder="+52 81 1234-5678" required>
+          </div>
+        </div>
+        <div class="services-request__form-item">
+          <label for="services">Servicios de Interés *</label>
+          <select name="services" id="services">
+            <option value="" disabled selected>¿Qué servicios necesitas?</option>
+            <option value="moldes-industriales">Solo Moldes Industriales</option>
+            <option value="diseno-3d">Solo Diseño 3D</option>
+            <option value="diseno-mas-molde">Diseño 3D + Molde Industrial</option>
+            <option value="consultoria-tecnica">Consultoría Técnica</option>
+            <option value="otros">Otro (especificar en mensaje)</option>
+          </select>
+        </div>
+        <div class="services-request__form-item">
+          <label for="description">Descripción del Proyecto</label>
+          <textarea name="description" id="description" placeholder="Describe tu proyecto: tipo de botella, volumen, cantidad, especificaciones especiales..."></textarea>
+        </div>
+        <div class="services-request__form-itemFile">
+          <label for="file" class="services-request__form-labelFile">
+            {{icons.file_uploadIcon | safe}}
+          </label>
+          <div class="services-request__form-textFile">
+            <p class="services-request__form-titleFile">Subir archivos de referencia</p>
+            <p class="services-request__form-subtitleFile">Planos, bocetos, imágenes, archivos CAD (opcional)</p>
+          </div>
+          <input type="file" name="file" id="file" multiple accept=".pdf,.dwg,.dxf,.stl,.obj,.svg,.ai,.psd,.sldprt,.igs,.step,.png,.jpg,.jpeg">
+        </div>
+        <div class="services-request__form-button">
+          <button type="submit">Solicitar Cotización</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>

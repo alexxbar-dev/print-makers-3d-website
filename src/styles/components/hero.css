@@ -1,0 +1,105 @@
+/* seccion hero */
+.hero {
+  padding-block: var(--padding-block-global);
+}
+
+.hero--inicio {
+  background: var(--background-gradient-main);
+}
+
+.hero--contacto {
+  background: var(--background-gradient-contact); 
+}
+
+.hero--diseno-3d-perso {
+  background: var(--background-gradient-diseno-3d-perso); 
+}
+
+.hero--servicios-industriales {
+  background: var(--background-gradient-servicios); 
+}
+
+.hero__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: var(--padding-inline-global);
+  background-color: transparent;
+  flex-wrap: wrap;
+  gap: 4rem;
+  max-width: var(--max-width-container-inner);
+  margin: var(--margin-container-inner);
+}
+
+.hero__text {
+  background: transparent;
+  flex: 1 1 calc(50% - 2rem);
+  color: var(--color-secundary-font-white);
+}
+
+.hero__text--contacto, .hero__text--servicios-industriales {
+  flex: 1 1 100%;
+  text-align: center;
+}
+
+.hero__badge {
+  background-color: var(--background-orange);
+  font-size: 1.2rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.hero__badge--contacto {
+  background-color: #1cc4b9; /* variable de componente creo */
+}
+
+.hero__badge:hover {
+  background-color: #e45f00; /* variable de componente creo */
+}
+
+.hero__title {
+  font-size: clamp(3.3rem, 4vw, 6rem); /* componente */
+  line-height: 1.2;
+  margin: 2.4rem 0 0 0;
+  text-wrap: balance;
+}  
+
+.hero__title .orange {
+  color: var(--color-font-orange);
+}
+
+.hero__title .blue {
+  color: var(--color-font-blue);
+}
+
+ .hero__description {
+  font-size: clamp(1.5rem, 1.5vw, 2rem); /* componente */
+  margin: 2.4rem auto 0 auto;
+  color: #d1d5db; /* variable de componente */
+  text-wrap: balance;
+}
+
+.hero__description--servicios-industriales {
+  width: 70ch;
+  text-wrap: auto;
+}
+
+.hero__image {
+  flex: 1 1 calc(50% - 2rem);
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin: 0;
+}
+
+.hero__image img {
+  width: 100%;
+  max-width: 60rem;
+  object-fit: cover;
+  border-radius: 1rem;
+  height: auto;
+  aspect-ratio: 1/1;
+
+}

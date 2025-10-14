@@ -1,0 +1,27 @@
+<section class="hero hero--{{ modifier }}">
+  <div class="hero__inner">
+    <div class="hero__text hero__text--{{ modifier }}">
+      <span class="hero__badge hero__badge--{{ modifier }}">
+        {{ hero.badge | safe }}
+      </span>
+      <h1 class="hero__title">
+        {{ hero.title | safe }}
+      </h1>
+      <p class="hero__description hero__description--{{ modifier }}">
+        {{ hero.description | safe }}
+      </p>
+
+      {% if hero.showbottoms %}
+      <div class="buttons-container buttons-container--{{ modifier }}">
+        <a href="/contacto/index.html" class="btn orange">{{ hero.button1 }}</a>
+        <a href="#portfolio" class="btn outline">{{ hero.button2 }}</a>
+      </div>
+      {% endif %}
+    </div>
+    {% if hero.showImage%}
+    <figure class="hero__image">
+      {{ hero.image | safe}}
+    </figure>
+    {% endif %}
+  </div>
+</section>

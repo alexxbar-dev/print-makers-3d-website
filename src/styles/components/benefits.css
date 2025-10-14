@@ -1,0 +1,51 @@
+/* seccion benefits */
+.benefits {
+  background-color: transparent;
+}
+
+.benefits--diseno-3d-perso {
+  background-color: var(--background-gray-light-section);
+}
+
+.benefits .benefits__p-custom {
+  max-width: 74rem;
+}
+
+
+.benefits__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem;
+  place-items: center;
+  flex: 1 1 100%;
+}
+
+.benefits__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.benefits__card-icon {
+  background-color: rgba(255, 193, 77, 0.39);
+  padding: 1.5rem;
+  display: grid;
+  place-items: center;
+  border-radius: 999rem;
+}
+.benefits__card-icon--diseno-3d-perso {
+  background-color: #f3e8ff;
+
+}
+
+.benefits__card h3{
+  font-size: 1.8rem;
+  margin: 1.5rem 0 0 0;
+}
+
+.benefits__card p {
+  color: var(--color-font-section-p);
+  font-size: var(--font-size-global);
+}

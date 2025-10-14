@@ -1,0 +1,142 @@
+
+/* Colores */
+:root {
+  --color-primary-font-black:#222;
+  --color-secundary-font-white: #ffffff;
+  --color-font-orange: #ff6a00;
+  --color-font-blue: #a0d8ff;
+  --color-font-section-p: #475569;
+  --color-font-section: #0f172a;  
+
+  --background-gradient-main: linear-gradient(to right, #0a1f44, #002d81);
+  --background-color-dark: #0a1a2f;
+  --background-color-light: #ffffff;
+  --background-orange: #ff6a00;
+  --background-gray-light-section: #F3F4F6;
+
+}
+
+/* Tipografia */
+:root {
+  --font-main: "Inter", sans-serif;
+  --font-size-global: 1.6rem;  
+  --font-size-logo: 2rem;
+  --font-size-buttons: 1.4rem;
+  --font-size-section-title: 3.6rem;
+}
+
+/* Espaciado */
+:root {
+  --padding-inline-global: clamp(2rem, 3.5vw, 5rem);
+  --padding-block-global: 6rem;
+  --margin-container-inner: 0 auto;
+}
+
+/* Diseño (layout) */
+:root {
+  --max-width-container-inner: 140rem;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: var(--font-size-global);
+  margin: 0;
+  font-family: var(--font-main);
+  background: linear-gradient(to bottom, 
+  var(--background-color-dark) 0%, 
+  var(--background-color-dark) 7%, 
+  var(--background-color-light) 7%, 
+  var(--background-color-light) 100%);
+  color: var(--color-primary-font-black);
+}
+
+
+
+/* botones globales */
+.buttons-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin: 2.4rem 0 0 0;
+}
+
+.buttons-container--servicios-industriales {
+  justify-content: center;
+}
+
+.buttons-container a.btn{
+  padding: 1.2rem 2rem;
+  color: var(--color-secundary-font-white);
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 0.6rem;
+  font-size: var(--font-size-buttons);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.buttons-container a.btn.orange {
+  background-color: var(--background-orange);
+}
+
+.buttons-container a.btn.outline {
+  background-color: transparent;
+  border: 0.1rem solid #fff;
+}
+
+.buttons-container a.btn:hover {
+  transform: scale(1.03);
+}
+
+/* layout global de secciones */
+.section__outer{
+  padding-block: var(--padding-block-global);
+  background-color: transparent;
+}
+
+.section__inner {
+  padding-inline: var(--padding-inline-global);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: var(--max-width-container-inner);
+  margin: var(--margin-container-inner);
+}
+
+.section__text {
+  flex: 1 1 100%;
+  text-align: center;  
+}
+
+.section__text h2 {
+  font-size: var(--font-size-section-title);
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: var(--color-font-section);
+}
+
+.section__text p {
+  font-size: 2rem;
+  color: var(--color-font-section-p);
+  max-width: 72rem;
+  margin: 0 auto 3rem auto;
+}
+
+
+
+
