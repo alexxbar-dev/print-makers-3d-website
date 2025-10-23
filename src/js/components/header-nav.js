@@ -1,5 +1,5 @@
 /**
- * @file nav-scroll.js
+ * @file header-nav.js
  * @description Manages the behavior of header:
  *   - Hide/show when scrolling
  *   - Mobile menu toggle with overlay and scroll lock

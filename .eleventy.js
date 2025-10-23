@@ -3,7 +3,7 @@ module.exports = function(eleventyConfig) {
   // Defines las carpetas que se copian tal cual al sitio de salida, esto no lo hace eleventy por defecto
   eleventyConfig.addPassthroughCopy({"src/styles" : "styles"});     // Copia estilos
   eleventyConfig.addPassthroughCopy({"src/assets" : "assets"});  // Copia imágenes
-  eleventyConfig.addPassthroughCopy({"src/scripts" : "js"});   // copia scripts
+  eleventyConfig.addPassthroughCopy({"src/js" : "js"});   // copia scripts
 
   return {
     dir: {

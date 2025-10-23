@@ -21,7 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
   function resetZoom() {
     modal.classList.remove("zoom-activo");
     modalImg.style.transform = `scale(1)`;
-    // modalImg.style.transformOrigin = `center center`;
   }
 
   modalImg.addEventListener("dblclick", (evento) => {
