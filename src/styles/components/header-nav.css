@@ -117,6 +117,10 @@
     align-items: center;
     justify-content: center;
     z-index: 30;
+    transition: transform 0.15s ease;
+  }
+  .header__nav-toggle:active {
+    transform: scale(0.94);
   }
 
   .header__nav-toggle img {
