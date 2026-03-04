@@ -1,13 +1,10 @@
 /* seccion servicios */
-.services .section__inner {
-  justify-content: space-between;
-}
 
 .services__card {
   background: var(--background-color-light);
   border-radius: 1.2rem;
-  flex: 1 1 50rem;
-  max-width: 67rem;
+  flex: 1 1 45rem;
+  max-width: 64rem;
   padding: 2rem;
   border: rgb(218, 215, 215) 0.2rem solid;
 }
@@ -116,7 +113,7 @@
 
 .portfolio__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr)); /*Meter un media query para cuando se haga mas chico cambie a minmax(28rem 1fr)*/
+  grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr)); 
   gap: 3.2rem;
   justify-content: center;
   align-items: stretch;
@@ -246,4 +243,21 @@
 }
 .modal__close:hover {
   transform: scale(1.1);
+}
+
+/* media queries */
+
+@media (max-width: 768px) {
+  .portfolio__grid {
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  }
+}
+
+@media (max-width: 992px) {
+  .services__card {
+    max-width:  70rem;
+  }
+  .services__card-list {
+    grid-template-columns: repeat(auto-fit, minmax(211px, 1fr));
+  }
 }

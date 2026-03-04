@@ -104,8 +104,8 @@
 
 /* media queries */
 
-/* A partir de 768px: colapsar navegación para diseño móvil */
-@media (max-width:768px)  {
+/* A partir de 785px: colapsar navegación para diseño móvil */
+@media (max-width:785px)  {
 
   .header__nav-toggle {
     display: block;

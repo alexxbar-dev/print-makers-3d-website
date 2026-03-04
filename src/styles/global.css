@@ -88,6 +88,7 @@ body {
   font-size: var(--font-size-buttons);
   cursor: pointer;
   transition: transform 0.3s ease;
+  text-align: center;
 }
 
 .buttons-container a.btn.orange {
@@ -134,10 +135,22 @@ body {
 .section__text p {
   font-size: 2rem;
   color: var(--color-font-section-p);
-  max-width: 72rem;
+  max-width: 85rem;
   margin: 0 auto 3rem auto;
+  text-wrap: balance;
 }
 
 
+/* media quieries */
 
+@media (max-width: 785px) {
+  .buttons-container--inicio, .buttons-container--diseno-3d-perso{
+    justify-content: center;
+  }
+}
 
+@media (max-width: 466px) {
+  .btn {
+    width: 100%;
+  }
+}

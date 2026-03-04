@@ -81,17 +81,13 @@
   text-wrap: balance;
 }
 
-.hero__description--servicios-industriales {
-  width: 70ch;
-  text-wrap: auto;
-}
-
 .hero__image {
   flex: 1 1 calc(50% - 2rem);
   display: flex;
   align-items: center;
-  justify-content: left;
+  justify-content: flex-start;
   margin: 0;
+  min-width: 34.5rem;
 }
 
 .hero__image img {
@@ -102,4 +98,28 @@
   height: auto;
   aspect-ratio: 1/1;
 
+}
+
+/* Media queries */
+
+@media (max-width:785px) {
+  .hero__image {
+    justify-content: center;
+  }
+
+  .hero__text {
+    text-align: center;
+  }
+}
+
+@media (max-width:385px) {
+  .hero__image {
+    min-width: auto;
+  }
+}
+
+@media (max-width:336px) {
+  .hero__title {
+    font-size: 3.2rem;
+  }
 }

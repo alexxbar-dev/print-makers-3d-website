@@ -32,6 +32,7 @@
     margin-bottom: 3.2rem;
 
     color: var(--color-font-p);
+    text-wrap: balance;
 }
 
 .data-contact__list {
@@ -41,11 +42,13 @@
 .data-contact__item {
     list-style-type: none;;
     display: flex;
+    flex-wrap: wrap;
     border: 1px solid var(--color-border-grey);
     
     margin-bottom: 2.4rem;
     border-radius: 0.8rem;
     padding: 2.4rem;
+    gap: 1.6rem;
 }
 
 .data-contact__item--phone {
@@ -86,7 +89,6 @@
 }
 
 .data-contact__item-text {
-    margin-left: 1.6rem;
     line-height: 1.5;
     font-weight: 350;
     font-style: italic;
@@ -138,6 +140,10 @@ p.data-contact__item-text-whatsapp {
     border: 1px solid var(--color-border-grey);
     border-radius: 0.8rem;
     box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.2);
+    container-type: inline-size;
+    container-name: form-container;
+    min-width: 350px;
+    max-width: 600px;
 }
 
 .data-contact__form-text {
@@ -223,12 +229,13 @@ p.data-contact__item-text-whatsapp {
 .buttons-contact {
     margin-top: 2.4rem;
     display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
     
 }
 
 .btn-contact {
-    flex: 1 1 50%;
+    flex: 1 1 calc(50% - 1rem);
     padding: 8px 16px;
     border-radius: 0.8rem;
     border: 1px solid var(--color-border-grey);
@@ -236,9 +243,11 @@ p.data-contact__item-text-whatsapp {
     font-size: 1.4rem;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 1rem;
     line-height: 1.6;
     transition: background-color 0.2s ease;
+    white-space: nowrap;
 }
 
 .btn-contact--primary {
@@ -256,4 +265,28 @@ p.data-contact__item-text-whatsapp {
 
 .btn-contact--secondary:hover {
     background-color: #f5f3f3;
+}
+
+.btn-contact img {
+    width: 18px;
+    height: 18px;
+}
+
+
+/* container queries*/
+
+@container form-container (max-width: 400px) {
+    .data-contact__form-grid {
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+/* media queries */
+
+@media (max-width: 390px) {
+
+    .data-contact__form {
+        min-width: 280px;
+    }
 }

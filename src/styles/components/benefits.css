@@ -8,7 +8,7 @@
 }
 
 .benefits .benefits__p-custom {
-  max-width: 74rem;
+  max-width: 90rem;
 }
 
 
@@ -48,4 +48,10 @@
 .benefits__card p {
   color: var(--color-font-section-p);
   font-size: var(--font-size-global);
+}
+
+@media (max-width: 1140px) and (min-width: 848px) {
+  .benefits__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

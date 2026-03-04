@@ -12,8 +12,9 @@
 
 .industrial-services__card {
     border-radius: 1.2rem;
-    flex: 1 1 40%;
+    flex: 1 1 46%;
     transition: box-shadow 0.2s ease;
+    min-width: 281px;
 }
 
 .industrial-services__card--blue {
@@ -109,6 +110,7 @@
     margin: 0;
     font-size: 1.4rem;
     color: var(--color-font-section-p);
+    text-wrap: balance;
 }
 
 .industrial-services__card-footer {
@@ -155,7 +157,7 @@
 
 .detailed-services__buttons {
     display: flex;
-    align-items: center;    
+    align-items: stretch;    
     margin-bottom:2.4rem ;
 
 }
@@ -176,7 +178,10 @@
     transition: background-color 0.3s ease, color 0.3s ease;
     cursor: pointer;
     color: var(--color-font-section-p);
+}
 
+.detailed-services__button svg {
+    min-width: 2rem;
 }
 
 .detailed-services__button.active {
@@ -197,19 +202,17 @@ div.hidden {
     visibility: visible;
     transform: translateY(0);
     transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s linear 0.3s;
-    
+    align-items: stretch;
 }
 
 .detailed-services__molds-process {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-self: center;
 }
 
 .detailed-services__molds-process h3 {
     margin: 0;
-    font-size: 2.4rem;
-    font-weight: 700;
+    font-size: var(--fs-h3-lg);
+    text-align: center;
 }
 
 .detailed-services__process-item {
@@ -255,8 +258,15 @@ div.hidden {
     line-height: 1.5;
 }
 
+.detailed-services__molds-specs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 .detailed-services__molds-specs > img{  
-    max-width: 100%;
+    width: 100%;
+    max-width: 60rem;
     height: auto;
     object-fit: cover;
     border-radius: 1rem;
@@ -270,11 +280,15 @@ div.hidden {
     background-color: #fff;
     border-radius: 1rem;
     margin-top: 3rem;
+    width: 100%;
+    max-width: 60rem;
+    text-align: center;
 }
 .detailed-services__specs-header {
     padding: 2.4rem;    
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 0.8rem;
 }
 
@@ -308,7 +322,7 @@ div.hidden {
 /* section detailed-services design */
 .detailed-services__design-wrapper {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 3rem;
     opacity: 1;
     visibility: visible;
@@ -389,7 +403,7 @@ div.hidden {
 .workflow__grid {
     flex: 1 1 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(5, 1fr);
     gap: 3rem;
     justify-content: end;
 }
@@ -593,4 +607,52 @@ div.hidden {
 
 .services-request__form-button button:hover {
     filter: brightness(0.80);
+}
+
+
+/* media queries */
+
+@media (max-width: 850px) {
+    .detailed-services__molds-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    /*workflow section*/
+    .workflow__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .workflow__item > img {
+        position: static;
+        margin-top: 1rem;
+        transform: rotate(90deg);
+    }
+}
+
+@media (max-width: 571px) {
+    .detailed-services__design-wrapper {
+        grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+    }
+
+    /* services-request section*/
+    .services-request__form-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+@media (max-width: 653px) {
+    .industrial-services__card-footer h4 {
+        text-align: center;
+    }
+
+    .industrial-services__footer-grid {
+        justify-items: center;
+    }
+}
+
+@media (min-width: 1172px) {
+    .detailed-services__design-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
