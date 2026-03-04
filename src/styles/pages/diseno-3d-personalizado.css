@@ -10,12 +10,13 @@
 .section__text--diseno p {
     margin-bottom: 0;
 }
+
+/* seccion printing capabilities */
 .section__grid-print {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 3.2rem;
-    
 }
 
 .section__grid-print-item {
@@ -149,7 +150,7 @@
 
 .section-material__title {
     margin: 6px 0 0 0;
-    font-size: 3rem;
+    font-size: var(--fs-h3-lg);
 }
 
 .section-material__text {
@@ -157,6 +158,7 @@
     font-size: 1.8rem;
     color: var(--color-font-section-p);
     text-align: center;
+    text-wrap: balance;
 }
 
 .section-material__badge {
@@ -185,6 +187,7 @@
     text-align: center;
     margin: 0;
     line-height: 1.5;
+    text-wrap: balance;
 }
 
 .section-material__body-features {
@@ -204,6 +207,7 @@
     align-items: center;
     gap: 0.8rem;
 }
+
 .section-material__body-characteristics h4 img {
     width: 2.2rem;
     height: auto;
@@ -336,7 +340,6 @@
 .section-material__body-purposes--green {
     border: 1px solid #22c55e;
     background-color: #f0fdf4;
-    margin-top: 4.8rem;
 }
 
 .section-material__body-purposes--blue {
@@ -364,7 +367,7 @@
 }
 
 .section-material__selection-text h3 {
-    font-size: 2.4rem;
+    font-size: var(--fs-h3-md);
     margin: 0;
 }
 
@@ -533,7 +536,7 @@
 }
 .printing__form-header h3 {
     margin: 0;
-    font-size: 2.4rem;
+    font-size: var(--fs-h3-md);
     font-weight: 600;
 }
 
@@ -541,6 +544,7 @@
     margin: 0.6rem 0 0 0;
     font-size: 1.4rem;
     color: var(--color-font-section-p);
+    text-wrap: balance;
 }
 
 .printing__form-inputs {

@@ -59,7 +59,7 @@
 }
 
 .industrial-services__card-header h3 {
-    font-size: 2.4rem;
+    font-size: var(--fs-h3-lg);
     margin: 0.6rem 0 0 0;
     font-weight: 600;
 }
@@ -95,7 +95,7 @@
 }
 
 .industrial-services__grid-item h4 {
-    font-size: 2.4rem;
+    font-size: var(--fs-h4);
     margin: 0;
     font-weight: 800;
 }
@@ -120,7 +120,6 @@
 .industrial-services__card-footer h4 {
     margin: 0;
     line-height: 1.5;
-
 }
 
 .industrial-services__footer-grid {
@@ -167,7 +166,7 @@
     border: none;
     padding: 1.2rem;
     background-color: transparent;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 500;
     font-family: inherit;
     line-height: 1.5;
@@ -197,7 +196,6 @@ div.hidden {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5rem;
-
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
@@ -294,7 +292,7 @@ div.hidden {
 
 .detailed-services__specs-header h3 {
     margin: 0;
-    font-size: 2.4rem;
+    font-size: var(--fs-h3-md);
     font-weight: 700;
 }
 
@@ -487,14 +485,15 @@ div.hidden {
 
 .services-request__form-header > h3 {
     margin: 0;
-    font-size: 2.4rem;
+    font-size: var(--fs-h3-lg);
     font-weight: 700;
 }
 
 .services-request__form-header > p {
     margin: 0.6rem 0 0 0;
-    font-size: 1.8rem;
+    font-size: var(--fs-descr-section);
     color: var(--color-font-section-p);
+    text-wrap: balance;
 }
 
 .services-request__form-inputs {

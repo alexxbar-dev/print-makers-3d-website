@@ -22,7 +22,16 @@
   --font-size-global: 1.6rem;  
   --font-size-logo: 2rem;
   --font-size-buttons: 1.4rem;
-  --font-size-section-title: 3.6rem;
+
+  /* Titulares de secciones */
+  --fs-h2: clamp(2.8rem, 2.5vw + 1rem, 3.6rem);
+  /* Subtítulos */
+  --fs-h3-lg: clamp(2.2rem, 1.2vw + 1.4rem, 2.8rem);
+  --fs-h3-md: clamp(2rem, 1.1vw + 1.2rem, 2.6rem);
+  --fs-h4: clamp(2rem, 1vw + 1.2rem, 2.4rem);
+
+  /* Descripciones de secciones */
+   --fs-descr-section: clamp(1.8rem, 1.2vw + 0.9rem, 2rem);
 }
 
 /* Espaciado */
@@ -72,7 +81,7 @@ body {
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
-  margin: 2.4rem 0 0 0;
+  margin: 2.4rem 0 0 0; 
 }
 
 .buttons-container--servicios-industriales {
@@ -104,6 +113,7 @@ body {
   transform: scale(1.03);
 }
 
+
 /* layout global de secciones */
 .section__outer{
   padding-block: var(--padding-block-global);
@@ -126,14 +136,14 @@ body {
 }
 
 .section__text h2 {
-  font-size: var(--font-size-section-title);
+  font-size: var(--fs-h2);
   margin-top: 0;
   margin-bottom: 1.5rem;
   color: var(--color-font-section);
 }
 
 .section__text p {
-  font-size: 2rem;
+  font-size: var(--fs-descr-section);
   color: var(--color-font-section-p);
   max-width: 85rem;
   margin: 0 auto 3rem auto;
