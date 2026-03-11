@@ -1,0 +1,96 @@
+# Nombre del workflow que aparecerá en la pestaña "Actions"
+name: Build and Deploy Print Makers 3D Site with Eleventy
+
+# Evento que dispara el workflow
+on:
+  push:
+    branches: ["main"]   # se ejecuta cuando hay push a main
+
+# Permisos que necesita el workflow
+permissions:
+  contents: read         # leer el repositorio
+  pages: write           # publicar en GitHub Pages
+  id-token: write        # autenticación segura para el deploy
+
+jobs:
+
+  # -------------------------
+  # JOB 1: BUILD
+  # -------------------------
+  build:
+    runs-on: ubuntu-latest
+    # GitHub crea una VM Linux temporal para ejecutar estos pasos
+
+    steps:
+
+      # Paso 1
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+        # Este action descarga el código del repositorio
+        # dentro del runner para poder trabajar con él
+
+      # Paso 2
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+        # Eleventy está basado en Node.js
+        # por lo tanto instalamos Node en el runner
+
+      # Paso 3
+      - name: Install dependencies
+        run: npm install
+
+        # instala las dependencias definidas en package.json
+        # incluyendo Eleventy
+
+      # Paso 4
+      - name: Build static site with Eleventy
+        run: npm run build
+
+        # ejecuta el script build
+        # que normalmente es:
+        # eleventy
+        #
+        # Eleventy genera el sitio estático en la carpeta _site/
+
+      # Paso 5
+      - name: Upload generated site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+        # Este paso guarda la carpeta generada (_site)
+        # como un "artifact"
+        #
+        # El artifact es un archivo temporal que
+        # el siguiente job usará para desplegar el sitio
+
+  # -------------------------
+  # JOB 2: DEPLOY
+  # -------------------------
+  deploy:
+
+    needs: build
+    # Esto indica que deploy solo corre
+    # cuando build terminó correctamente
+
+    runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+      # Define el entorno de despliegue.
+      # GitHub Pages utiliza este entorno para gestionar el deploy.
+
+    steps:
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+        # Este action toma el artifact generado
+        # y lo publica en GitHub Pages
