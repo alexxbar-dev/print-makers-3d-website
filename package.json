@@ -4,8 +4,8 @@
   "description": "Especialistas en fabricación de moldes industriales y servicios de impresión 3D personalizada. Transformamos tus ideas en piezas funcionales con precisión y calidad.",
   "main": "index.js",
   "scripts": {
-    "start": "eleventy --serve",
-    "build": "eleventy",
+    "start": "NODE_ENV=development eleventy --serve",
+    "build": "NODE_ENV=production eleventy",
     "clean": "rm -rf _site"
   },
   "keywords": [

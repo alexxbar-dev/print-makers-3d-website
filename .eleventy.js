@@ -5,7 +5,12 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({"src/assets" : "assets"});  // Copia imágenes
   eleventyConfig.addPassthroughCopy({"src/js" : "js"});   // Copia scripts
 
+  // Detecta el entorno de desarrollo o producción
+  const isProduction = process.env.NODE_ENV === "production";
+
   return {
+    // En base a la variable de entorno ELEVENTY_ENV se define el pathPrefix para que el filtro url aplique la ruta raíz correcta, dependiendo de si estamos en producción o en desarrollo
+    pathPrefix: isProduction ? "/print-makers-3d-website/" : "/",
     dir: {
       input: "src/pages",  // Carpeta raíz del proyecto fuente, apunta a las paginas del proyecto
       includes: "../_includes", // Aqui indicas donde estan los includes y este es relativo al input

@@ -20,22 +20,22 @@
       rel="stylesheet"> 
       
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="/styles/global.css">
-    <link rel="stylesheet" href="/styles/components/header-nav.css">
-    <link rel="stylesheet" href="/styles/components/footer.css">
+    <link rel="stylesheet" href="{{ '/styles/global.css' | url}}">
+    <link rel="stylesheet" href="{{ '/styles/components/header-nav.css' | url }}">
+    <link rel="stylesheet" href="{{ '/styles/components/footer.css' | url }}">
     {% if styles %}
       {%- for style in styles -%}
-        <link rel="stylesheet" href="{{ style }}">
+        <link rel="stylesheet" href="{{ style | url }}">
       {% endfor %}
     {%- endif -%}
 
     <!-- Favicons -->
-    <link rel="icon" type="image/png" href="/assets/global/favicons/print-icon-48.png" sizes="16x16"/>
-    <link rel="icon" type="image/png" href="/assets/global/favicons/print-icon-96.png" sizes="32x32"/>
-    <link rel="shortcut icon" href="/assets/global/favicons/favicon.ico"/>
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/global/favicons/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" href="{{ '/assets/global/favicons/print-icon-48.png' | url }}" sizes="16x16"/>
+    <link rel="icon" type="image/png" href="{{ '/assets/global/favicons/print-icon-96.png' | url }}" sizes="32x32"/>
+    <link rel="shortcut icon" href="{{ '/assets/global/favicons/favicon.ico' | url }}"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/global/favicons/apple-touch-icon.png' | url }}"/>
     <meta name="apple-mobile-web-app-title" content="Print Makers 3D"/>
-    <link rel="manifest" href="/assets/global/favicons/site.webmanifest"/>
+    <link rel="manifest" href="{{ '/assets/global/favicons/site.webmanifest' | url }}"/>
 
     <title>
       {{ title }} - Print Makers 3D
@@ -57,9 +57,9 @@
     
     <!-- seccion footer -->
     {% include "components/footer.njk" %}
-    <script src="/js/components/header-nav.js" defer></script>
-    {% if script %}
-      {{ script | safe }}
-    {%- endif -%} 
+    <script src="{{ '/js/components/header-nav.js' | url }}" defer></script>
+    {%- if script %}
+    <script src="{{ script | url }}" defer></script>
+    {%- endif %} 
   </body>
 </html>

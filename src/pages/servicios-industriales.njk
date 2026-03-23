@@ -6,7 +6,7 @@ styles:
   - /styles/components/hero.css
   - /styles/components/contact-cta.css
 
-script: '<script src="/js/pages/servicios-industriales.js" defer></script>'
+script: '/js/pages/servicios-industriales.js'
 
 modifier: 'servicios-industriales'
 
@@ -20,17 +20,17 @@ hero:
   button2: 'Solicitar Consulta'
 
 icons:
-  rightArrow: '<img src="/assets/pages/servicios-industriales/icons/workflow-section/right-arrow-icon.svg" alt="" loading="lazy">'
-  checkIcon_blue: '<img src="/assets/pages/servicios-industriales/icons/industrial-services-section/check-icon-blue.svg" alt="" loading="lazy">'
-  checkIcon_green: '<img src="/assets/pages/servicios-industriales/icons/industrial-services-section/check-icon-green.svg" alt="" loading="lazy">'
-  wrenchIcon_blue: '<img src="/assets/pages/servicios-industriales/icons/detailed-services-section/wrench-icon.svg" alt="" loading="lazy">'
-  boxIcon_green: '<img src="/assets/pages/servicios-industriales/icons/detailed-services-section/box-icon.svg" alt="" loading="lazy">'
-  rotateIcon_green: '<img src="/assets/pages/servicios-industriales/icons/detailed-services-section/rotate-icon.svg" alt="" loading="lazy">'
-  eyeIcon_green: '<img src="/assets/pages/servicios-industriales/icons/detailed-services-section/eye-icon.svg" alt="" loading="lazy">'
-  bulbIcon_green: '<img src="/assets/pages/servicios-industriales/icons/detailed-services-section/bulb-icon.svg" alt="" loading="lazy">'
-  rulerIcon_green: '<img src="/assets/pages/servicios-industriales/icons/detailed-services-section/ruler-icon.svg" alt="" loading="lazy">'
-  layersIcon_green: '<img src="/assets/pages/servicios-industriales/icons/detailed-services-section/layers-icon.svg" alt="" loading="lazy">'
-  file_uploadIcon: '<img src="/assets/pages/servicios-industriales/icons/services-request-section/file-upload-icon.svg" alt="" loading="lazy">'
+  rightArrow: '/assets/pages/servicios-industriales/icons/workflow-section/right-arrow-icon.svg'
+  checkIcon_blue: '/assets/pages/servicios-industriales/icons/industrial-services-section/check-icon-blue.svg'
+  checkIcon_green: '/assets/pages/servicios-industriales/icons/industrial-services-section/check-icon-green.svg'
+  wrenchIcon_blue: '/assets/pages/servicios-industriales/icons/detailed-services-section/wrench-icon.svg'
+  boxIcon_green: '/assets/pages/servicios-industriales/icons/detailed-services-section/box-icon.svg'
+  rotateIcon_green: '/assets/pages/servicios-industriales/icons/detailed-services-section/rotate-icon.svg'
+  eyeIcon_green: '/assets/pages/servicios-industriales/icons/detailed-services-section/eye-icon.svg'
+  bulbIcon_green: '/assets/pages/servicios-industriales/icons/detailed-services-section/bulb-icon.svg'
+  rulerIcon_green: '/assets/pages/servicios-industriales/icons/detailed-services-section/ruler-icon.svg'
+  layersIcon_green: '/assets/pages/servicios-industriales/icons/detailed-services-section/layers-icon.svg'
+  file_uploadIcon: '/assets/pages/servicios-industriales/icons/services-request-section/file-upload-icon.svg'
 ---
 
 <section class="section__outer industrial-services">
@@ -46,7 +46,7 @@ icons:
 
         <div class="industrial-services__card-header">
           <div class="industrial-services__card-icon industrial-services__card-icon--blue">
-            <img src="/assets/pages/servicios-industriales/icons/industrial-services-section/gear-icon.svg" alt="" loading="lazy">
+            <img src="{{ '/assets/pages/servicios-industriales/icons/industrial-services-section/gear-icon.svg' | url }}" alt="" loading="lazy">
           </div>
           <h3>Moldes Industriales</h3>
           <p>
@@ -76,10 +76,10 @@ icons:
           <div class="industrial-services__card-footer">
             <h4>Tecnologías Utilizadas:</h4>
             <ul class="industrial-services__footer-grid">
-              <li>{{ icons.checkIcon_blue | safe }} Diseño CAD</li>
-              <li>{{ icons.checkIcon_blue | safe }} Mecanizado CNC</li>
-              <li>{{ icons.checkIcon_blue | safe }} Acero P20/H13</li>
-              <li>{{ icons.checkIcon_blue | safe }} Control Numérico</li>
+              <li><img src="{{ icons.checkIcon_blue | url }}" alt="" loading="lazy"> Diseño CAD</li>
+              <li><img src="{{ icons.checkIcon_blue | url }}" alt="" loading="lazy"> Mecanizado CNC</li>
+              <li><img src="{{ icons.checkIcon_blue | url }}" alt="" loading="lazy"> Acero P20/H13</li>
+              <li><img src="{{ icons.checkIcon_blue | url }}" alt="" loading="lazy"> Control Numérico</li>
             </ul>
           </div>
         </div>
@@ -88,7 +88,7 @@ icons:
       <div class="industrial-services__card industrial-services__card--green">
         <div class="industrial-services__card-header">
           <div class="industrial-services__card-icon industrial-services__card-icon--green">
-            <img src="/assets/pages/servicios-industriales/icons/industrial-services-section/cad-icon.svg" alt="" loading="lazy">
+            <img src="{{ '/assets/pages/servicios-industriales/icons/industrial-services-section/cad-icon.svg' | url }}" alt="" loading="lazy">
           </div>
           <h3>Diseño 3D Profesional</h3>
           <p>
@@ -117,10 +117,10 @@ icons:
           <div class="industrial-services__card-footer">
             <h4>Servicios Incluidos:</h4>
             <ul class="industrial-services__footer-grid">
-              <li>{{ icons.checkIcon_green | safe }} Modelado 3D</li>
-              <li>{{ icons.checkIcon_green | safe }} Renderizado</li>
-              <li>{{ icons.checkIcon_green | safe }} Planos Técnicos </li>
-              <li>{{ icons.checkIcon_green | safe }} Optimización</li>
+              <li><img src="{{ icons.checkIcon_green | url }}" alt="" loading="lazy"> Modelado 3D</li>
+              <li><img src="{{ icons.checkIcon_green | url }}" alt="" loading="lazy"> Renderizado</li>
+              <li><img src="{{ icons.checkIcon_green | url }}" alt="" loading="lazy"> Planos Técnicos </li>
+              <li><img src="{{ icons.checkIcon_green | url }}" alt="" loading="lazy"> Optimización</li>
             </ul>
           </div>
         </div>
@@ -164,7 +164,7 @@ icons:
             <div class="detailed-services__process-number">01</div>
             <div class="detailed-services__process-text">
              <div class="detailed-services__process-header">
-              <img src="/assets/pages/servicios-industriales/icons/detailed-services-section/target-icon.svg" alt="">
+              <img src="{{ '/assets/pages/servicios-industriales/icons/detailed-services-section/target-icon.svg' | url }}" alt="">
               <h4>Análisis Técnico</h4>
              </div> 
              <p class="detailed-services__process-description">
@@ -177,7 +177,7 @@ icons:
             <div class="detailed-services__process-number">02</div>
             <div class="detailed-services__process-text">
              <div class="detailed-services__process-header">
-              <img src="/assets/pages/servicios-industriales/icons/detailed-services-section/cad-icon.svg" alt="">
+              <img src="{{ '/assets/pages/servicios-industriales/icons/detailed-services-section/cad-icon.svg' | url }}" alt="">
               <h4>Diseño CAD Avanzado</h4>
              </div> 
              <p class="detailed-services__process-description">
@@ -190,7 +190,7 @@ icons:
             <div class="detailed-services__process-number">03</div>
             <div class="detailed-services__process-text">
              <div class="detailed-services__process-header">
-              <img src="/assets/pages/servicios-industriales/icons/detailed-services-section/gear-icon.svg" alt="">
+              <img src="{{ '/assets/pages/servicios-industriales/icons/detailed-services-section/gear-icon.svg' | url }}" alt="">
               <h4>Mecanizado CNC</h4>
              </div> 
              <p class="detailed-services__process-description">
@@ -203,7 +203,7 @@ icons:
             <div class="detailed-services__process-number">04</div>
             <div class="detailed-services__process-text">
              <div class="detailed-services__process-header">
-              <img src="/assets/pages/servicios-industriales/icons/detailed-services-section/check-icon-blue.svg" alt="">
+              <img src="{{ '/assets/pages/servicios-industriales/icons/detailed-services-section/check-icon-blue.svg' | url }}" alt="">
               <h4>Control de Calidad</h4>
              </div> 
              <p class="detailed-services__process-description">
@@ -214,10 +214,10 @@ icons:
         </div>
 
         <div class="detailed-services__molds-specs">
-          <img src="/assets/pages/servicios-industriales/images/bottleMould.webp" alt="" loading="lazy">
+          <img src="{{ '/assets/pages/servicios-industriales/images/bottleMould.webp' | url }}" alt="" loading="lazy">
           <div class="detailed-services__technical-specs">
             <div class="detailed-services__specs-header">
-              {{ icons.wrenchIcon_blue | safe}}
+              <img src="{{ icons.wrenchIcon_blue | url }}" alt="" loading="lazy">
               <h3>Especificaciones Técnicas</h3>
             </div>
             <div class="detailed-services__specs-body">
@@ -247,17 +247,26 @@ icons:
         <div class="detailed-services__design-item">
           <div class="detailed-services__design-header">
             <div class="detailed-services__design-header-icon">
-              {{icons.boxIcon_green | safe}}
+              <img src="{{ icons.boxIcon_green | url }}" alt="" loading="lazy">
             </div>
             <h3>Modelado Paramétrico</h3>
             <p>Modelos 3D editables con parámetros controlables</p>
           </div>
           <div class="detailed-services__design-body">
             <ul>
-              <li class="detailed-services__design-list-item">{{icons.checkIcon_green | safe}} <span>SolidWorks</span></li>
-              <li class="detailed-services__design-list-item">{{icons.checkIcon_green | safe}} <span>Fusion 360</span></li>
-              <li class="detailed-services__design-list-item">{{icons.checkIcon_green | safe}} <span>Modificaciones rápidas</span></li>
-              <li class="detailed-services__design-list-item">{{icons.checkIcon_green | safe}} <span>Historial de cambios</span></li>
+              <li class="detailed-services__design-list-item">
+                <img src="{{ icons.checkIcon_green | url }}" alt="" loading="lazy">
+                <span>SolidWorks</span>
+              </li>
+              <li class="detailed-services__design-list-item">
+                <img src="{{ icons.checkIcon_green | url }}" alt="" loading="lazy"> 
+                <span>Fusion 360</span></li>
+              <li class="detailed-services__design-list-item">
+                <img src="{{ icons.checkIcon_green | url }}" alt="" loading="lazy"> 
+                <span>Modificaciones rápidas</span></li>
+              <li class="detailed-services__design-list-item">
+                <img src="{{ icons.checkIcon_green | url }}" alt="" loading="lazy"> 
+                <span>Historial de cambios</span></li>
               </li>
             </ul>
           </div>
@@ -266,17 +275,25 @@ icons:
         <div class="detailed-services__design-item">
           <div class="detailed-services__design-header">
             <div class="detailed-services__design-header-icon">
-              {{icons.rotateIcon_green | safe}}
+              <img src="{{ icons.rotateIcon_green | url }}" alt="" loading="lazy">
             </div>
             <h3>Ingeniería Inversa</h3>
             <p>Recreación digital de piezas físicas existentes</p>
           </div>
           <div class="detailed-services__design-body">
             <ul>
-              <li class="detailed-services__design-list-item">{{icons.checkIcon_green | safe}} <span>Escaneo 3D</span></li>
-              <li class="detailed-services__design-list-item">{{icons.checkIcon_green | safe}} <span>Reconstrucción</li>
-              <li class="detailed-services__design-list-item">{{icons.checkIcon_green | safe}} <span>Optimización</li>
-              <li class="detailed-services__design-list-item">{{icons.checkIcon_green | safe}} <span>Documentacíon</li>
+              <li class="detailed-services__design-list-item">
+                <img src="{{ icons.checkIcon_green | url }}" alt="" loading="lazy"> 
+                <span>Escaneo 3D</span></li>
+              <li class="detailed-services__design-list-item">
+                <img src="{{ icons.checkIcon_green | url }}" alt="" loading="lazy"> 
+                <span>Reconstrucción</span></li>
+              <li class="detailed-services__design-list-item">
+                <img src="{{ icons.checkIcon_green | url }}" alt="" loading="lazy"> 
+                <span>Optimización</span></li>
+              <li class="detailed-services__design-list-item">
+                <img src="{{ icons.checkIcon_green | url }}" alt="" loading="lazy"> 
+                <span>Documentación</span></li>
               </li>
             </ul>
           </div>
@@ -285,17 +302,25 @@ icons:
         <div class="detailed-services__design-item">
           <div class="detailed-services__design-header">
             <div class="detailed-services__design-header-icon">
-              {{icons.eyeIcon_green | safe}}
+              <img src="{{ icons.eyeIcon_green | url }}" alt="" loading="lazy">
             </div>
             <h3>Renderizado Fotorrealista</h3>
             <p>Visualizaciones de alta calidad para presentaciones</p>
           </div>
           <div class="detailed-services__design-body">
             <ul>
-              <li class="detailed-services__design-list-item">{{icons.checkIcon_green | safe}} <span>KeyShot</span></li>
-              <li class="detailed-services__design-list-item">{{icons.checkIcon_green | safe}} <span>4K Resolution</span></li>
-              <li class="detailed-services__design-list-item">{{icons.checkIcon_green | safe}} <span>Animaciones</span></li>
-              <li class="detailed-services__design-list-item">{{icons.checkIcon_green | safe}} <span>Materiales realistas</li>
+              <li class="detailed-services__design-list-item">
+                <img src="{{ icons.checkIcon_green | url }}" alt="" loading="lazy"> 
+                <span>KeyShot</span></li>
+              <li class="detailed-services__design-list-item">
+                <img src="{{ icons.checkIcon_green | url }}" alt="" loading="lazy"> 
+                <span>4K Resolution</span></li>
+              <li class="detailed-services__design-list-item">
+                <img src="{{ icons.checkIcon_green | url }}" alt="" loading="lazy"> 
+                <span>Animaciones</span></li>
+              <li class="detailed-services__design-list-item">
+                <img src="{{ icons.checkIcon_green | url }}" alt="" loading="lazy"> 
+                <span>Materiales realistas</span></li>
               </li>
             </ul>
           </div>
@@ -304,17 +329,29 @@ icons:
         <div class="detailed-services__design-item">
           <div class="detailed-services__design-header">
             <div class="detailed-services__design-header-icon">
-              {{icons.bulbIcon_green | safe}}
+              <img src="{{ icons.bulbIcon_green | url }}" alt="" loading="lazy">
             </div>
             <h3>Proptotipado Virtual</h3>
             <p>Validación de diseños antes de fabricación</p>
           </div>
           <div class="detailed-services__design-body">
             <ul>
-              <li class="detailed-services__design-list-item">{{icons.checkIcon_green | safe}} <span>Simulaciones</span></li>
-              <li class="detailed-services__design-list-item">{{icons.checkIcon_green | safe}} <span>Análisis FEA</span></li>
-              <li class="detailed-services__design-list-item">{{icons.checkIcon_green | safe}} <span>Detección de errores</span></li>
-              <li class="detailed-services__design-list-item">{{icons.checkIcon_green | safe}} <span>Optimización</span></li>
+              <li class="detailed-services__design-list-item">
+                <img src="{{ icons.checkIcon_green | url }}" alt="" loading="lazy"> 
+                <span>Simulaciones</span>
+              </li>
+              <li class="detailed-services__design-list-item">
+                <img src="{{ icons.checkIcon_green | url }}" alt="" loading="lazy"> 
+                <span>Análisis FEA</span>
+              </li>
+              <li class="detailed-services__design-list-item">
+                <img src="{{ icons.checkIcon_green | url }}" alt="" loading="lazy"> 
+                <span>Detección de errores</span>
+              </li>
+              <li class="detailed-services__design-list-item">
+                <img src="{{ icons.checkIcon_green | url }}" alt="" loading="lazy"> 
+                <span>Optimización</span>
+              </li>
               </li>
             </ul>
           </div>
@@ -323,17 +360,29 @@ icons:
         <div class="detailed-services__design-item">
           <div class="detailed-services__design-header">
             <div class="detailed-services__design-header-icon">
-              {{icons.rulerIcon_green | safe}}
+              <img src="{{ icons.rulerIcon_green | url }}" alt="" loading="lazy">
             </div>
             <h3>Planos Técnicos</h3>
             <p>Documentacíon completa para fabricación</p>
           </div>
           <div class="detailed-services__design-body">
             <ul>
-              <li class="detailed-services__design-list-item">{{icons.checkIcon_green | safe}} <span>AutoCAD</span></li>
-              <li class="detailed-services__design-list-item">{{icons.checkIcon_green | safe}} <span>Dimensionado</span></li>
-              <li class="detailed-services__design-list-item">{{icons.checkIcon_green | safe}} <span>Tolerancias</span></li>
-              <li class="detailed-services__design-list-item">{{icons.checkIcon_green | safe}} <span>Listas materiales</span></li>
+              <li class="detailed-services__design-list-item">
+                <img src="{{ icons.checkIcon_green | url }}" alt="" loading="lazy"> 
+                <span>AutoCAD</span>
+              </li>
+              <li class="detailed-services__design-list-item">
+                <img src="{{ icons.checkIcon_green | url }}" alt="" loading="lazy"> 
+                <span>Dimensionado</span>
+              </li>
+              <li class="detailed-services__design-list-item">
+                <img src="{{ icons.checkIcon_green | url }}" alt="" loading="lazy"> 
+                <span>Tolerancias</span>
+              </li>
+              <li class="detailed-services__design-list-item">
+                <img src="{{ icons.checkIcon_green | url }}" alt="" loading="lazy"> 
+                <span>Listas materiales</span>
+              </li>
               </li>
             </ul>
           </div>
@@ -342,17 +391,29 @@ icons:
         <div class="detailed-services__design-item">
           <div class="detailed-services__design-header">
             <div class="detailed-services__design-header-icon">
-              {{icons.layersIcon_green | safe}}
+              <img src="{{ icons.layersIcon_green | url }}" alt="" loading="lazy">
             </div>
             <h3>Optimización 3D</h3>
             <p>Preparación para impresión y fabricación</p>
           </div>
           <div class="detailed-services__design-body">
             <ul>
-              <li class="detailed-services__design-list-item">{{icons.checkIcon_green | safe}} <span>Reducción polígonos</span></li>
-              <li class="detailed-services__design-list-item">{{icons.checkIcon_green | safe}} <span>Soportes</span></li>
-              <li class="detailed-services__design-list-item">{{icons.checkIcon_green | safe}} <span>Orientación</span></li>
-              <li class="detailed-services__design-list-item">{{icons.checkIcon_green | safe}} <span>Análisis</span></li>
+              <li class="detailed-services__design-list-item">
+                <img src="{{ icons.checkIcon_green | url }}" alt="" loading="lazy"> 
+                <span>Reducción polígonos</span>
+              </li>
+              <li class="detailed-services__design-list-item">
+                <img src="{{ icons.checkIcon_green | url }}" alt="" loading="lazy"> 
+                <span>Soportes</span>
+              </li>
+              <li class="detailed-services__design-list-item">
+                <img src="{{ icons.checkIcon_green | url }}" alt="" loading="lazy"> 
+                <span>Orientación</span>
+              </li>
+              <li class="detailed-services__design-list-item">
+                <img src="{{ icons.checkIcon_green | url }}" alt="" loading="lazy"> 
+                <span>Análisis</span>
+              </li>
               </li>
             </ul>
           </div>
@@ -373,43 +434,43 @@ icons:
     <div class="workflow__grid">
       <div class="workflow__item">
         <div class="workflow__icon workflow__icon--bulb">
-          <img src="/assets/pages/servicios-industriales/icons/workflow-section/bulb-icon.svg" alt="" loading="lazy">
+          <img src="{{ '/assets/pages/servicios-industriales/icons/workflow-section/bulb-icon.svg' | url }}" alt="" loading="lazy">
         </div>
         <div class="workflow__badge">Concepto</div>
         <h3>Idea Inicial</h3>
         <p>Análisis de requerimientos y conceptualización</p>  
-        {{icons.rightArrow | safe}}
+        <img src="{{ icons.rightArrow | url }}" alt="" loading="lazy">
       </div>
       <div class="workflow__item">
         <div class="workflow__icon workflow__icon--cad">
-          <img src="/assets/pages/servicios-industriales/icons/workflow-section/cad-icon.svg" alt="" loading="lazy">
+          <img src="{{ '/assets/pages/servicios-industriales/icons/workflow-section/cad-icon.svg' | url }}" alt="" loading="lazy">
         </div>
         <div class="workflow__badge">Diseño</div>
         <h3>Modelo 3D</h3>
         <p>Creación del modelo digital detallado</p>
-        {{icons.rightArrow | safe}}
+        <img src="{{ icons.rightArrow | url }}" alt="" loading="lazy">
       </div>
       <div class="workflow__item">
         <div class="workflow__icon workflow__icon--eye">
-          <img src="/assets/pages/servicios-industriales/icons/workflow-section/eye-icon.svg" alt="" loading="lazy">
+          <img src="{{ '/assets/pages/servicios-industriales/icons/workflow-section/eye-icon.svg' | url }}" alt="" loading="lazy">
         </div>
         <div class="workflow__badge">Validación</div>
         <h3>Simulación</h3>
         <p>Pruebas virtuales y optimización</p>
-        {{icons.rightArrow | safe}}
+        <img src="{{ icons.rightArrow | url }}" alt="" loading="lazy">
       </div>
       <div class="workflow__item">
         <div class="workflow__icon workflow__icon--gear">
-          <img src="/assets/pages/servicios-industriales/icons/workflow-section/gear-icon.svg" alt="" loading="lazy">
+          <img src="{{ '/assets/pages/servicios-industriales/icons/workflow-section/gear-icon.svg' | url }}" alt="" loading="lazy">
         </div>
         <div class="workflow__badge">Fabricación</div>
         <h3>Producción</h3>
         <p>Mecanizado CNC del molde final</p>
-        {{icons.rightArrow | safe}}
+        <img src="{{ icons.rightArrow | url }}" alt="" loading="lazy">
       </div>
       <div class="workflow__item">
         <div class="workflow__icon workflow__icon--check">
-          <img src="/assets/pages/servicios-industriales/icons/workflow-section/check-icon.svg" alt="" loading="lazy">
+          <img src="{{ '/assets/pages/servicios-industriales/icons/workflow-section/check-icon.svg' | url }}" alt="" loading="lazy">
         </div>
         <div class="workflow__badge">Entrega</div>
         <h3>Producto Final</h3>
@@ -464,7 +525,7 @@ icons:
         </div>
         <div class="services-request__form-itemFile">
           <label for="file" class="services-request__form-labelFile">
-            {{icons.file_uploadIcon | safe}}
+            <img src="{{ icons.file_uploadIcon | url }}" alt="" loading="lazy">
           </label>
           <div class="services-request__form-textFile">
             <p class="services-request__form-titleFile">Subir archivos de referencia</p>

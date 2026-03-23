@@ -17,7 +17,9 @@ hero:
   showbottoms: true
   button1: 'Solicitar Impresión'
   button2: 'Ver portafolio'
-  image: <img src="/assets//pages/diseno-3d-perso/images/llaveros3d.jpg" alt="Banner principal de impresión 3D personalizada" loading="eager">
+  image: 
+    src: "/assets/pages/diseno-3d-perso/images/llaveros3d.jpg"
+    alt: "Llaveros echos por impresión 3D"
 
 benefits:
   title: '¿Por qué Elegir Nuestro Servicio?'
@@ -25,19 +27,19 @@ benefits:
   items:
     - subtitle: 'Entrega Rápida'
       description: 'Tiempos de producción optimizados, desde 24 horas para piezas simples'
-      icon: '<img src="/assets/pages/diseno-3d-perso/icons/benefits-section/clock-icon.svg" alt="" aria-hidden="true" loading="lazy">'
+      icon: "/assets/pages/diseno-3d-perso/icons/benefits-section/clock-icon.svg"
     - subtitle: 'Alta Precisión'
       description: 'Resolución de hasta 0.1mm para detalles perfectos en cada impresión'
-      icon: '<img src="/assets/pages/diseno-3d-perso/icons/benefits-section/ruler-icon.svg" alt="" aria-hidden="true" loading="lazy">'
+      icon: "/assets/pages/diseno-3d-perso/icons/benefits-section/ruler-icon.svg"
     - subtitle: 'Calidad Garantizada'
       description: 'Control de calidad riguroso y garantía en todos nuestros productos'
-      icon: '<img src="/assets/pages/diseno-3d-perso/icons/benefits-section/shield-icon.svg" alt="" aria-hidden="true" loading="lazy">'
+      icon: "/assets/pages/diseno-3d-perso/icons/benefits-section/shield-icon.svg"
     - subtitle: 'Sin Archivo, Sin problema'
       description: 'Creamos el diseño 3D por ti si solo tienes la idea o boceto'
-      icon: '<img src="/assets/pages/diseno-3d-perso/icons/benefits-section/bolt-icon.svg"" alt="" aria-hidden="true" loading="lazy">'
+      icon: "/assets/pages/diseno-3d-perso/icons/benefits-section/bolt-icon.svg"
 
-check_icon: '<img src="/assets/pages/diseno-3d-perso/icons/shared/check-icon-green.svg" alt="" loading="lazy" aria-hidden="true">'
-check_icon_blue: '<img src="/assets/pages/diseno-3d-perso/icons/shared/check-icon-blue.svg" alt="" loading="lazy" aria-hidden="true">'
+check_icon: "/assets/pages/diseno-3d-perso/icons/shared/check-icon-green.svg"
+check_icon_blue: "/assets/pages/diseno-3d-perso/icons/shared/check-icon-blue.svg"
 ---
 
 <section class="section__outer print-capabilities">
@@ -52,16 +54,16 @@ check_icon_blue: '<img src="/assets/pages/diseno-3d-perso/icons/shared/check-ico
       <div class="section__grid-print-item">
         <div class="section__grid-print-header">
           <div class="section__grid-print-icon section__grid-print-icon--heart">
-            <img src="/assets/pages/diseno-3d-perso/icons/print-capabilities-section/heart-icon.svg" alt="" aria-hidden="true" loading="lazy">
+            <img src="{{ '/assets/pages/diseno-3d-perso/icons/print-capabilities-section/heart-icon.svg' | url }}" alt="" aria-hidden="true" loading="lazy">
           </div>
           <h3>Personalización</h3>
         </div>
         <div class="section__grid-print-body">
           <ul class="section__grid-body-ul">
-            <li class="section__grid-body-li">{{ check_icon | safe }} <span>LLaveros únicos</span></li>
-            <li class="section__grid-body-li">{{ check_icon | safe }} <span>Placas Identificativas</span></li>
-            <li class="section__grid-body-li">{{ check_icon | safe }} <span>Regalos personalizados</span></li>
-            <li class="section__grid-body-li">{{ check_icon | safe }} <span>Figuras a medida</span></li>
+            <li class="section__grid-body-li"><img src="{{ check_icon | url }}" alt="" loading="lazy" aria-hidden="true"> <span>LLaveros únicos</span></li>
+            <li class="section__grid-body-li"><img src="{{ check_icon | url }}" alt="" loading="lazy" aria-hidden="true"> <span>Placas Identificativas</span></li>
+            <li class="section__grid-body-li"><img src="{{ check_icon | url }}" alt="" loading="lazy" aria-hidden="true"> <span>Regalos personalizados</span></li>
+            <li class="section__grid-body-li"><img src="{{ check_icon | url }}" alt="" loading="lazy" aria-hidden="true"> <span>Figuras a medida</span></li>
           </ul>
         </div>
       </div>
@@ -69,16 +71,16 @@ check_icon_blue: '<img src="/assets/pages/diseno-3d-perso/icons/shared/check-ico
       <div class="section__grid-print-item">
         <div class="section__grid-print-header">
           <div class="section__grid-print-icon section__grid-print-icon--bulb">
-            <img src="/assets/pages/diseno-3d-perso/icons/print-capabilities-section/bulb-icon.svg" alt="" aria-hidden="true" loading="lazy">
+            <img src="{{ '/assets/pages/diseno-3d-perso/icons/print-capabilities-section/bulb-icon.svg' | url }}" alt="" aria-hidden="true" loading="lazy">
           </div>
           <h3>Prototipos</h3>
         </div>
         <div class="section__grid-print-body">
           <ul class="section__grid-body-ul">
-            <li class="section__grid-body-li">{{ check_icon | safe }} <span>Modelos funcionales</span></li>
-            <li class="section__grid-body-li">{{ check_icon | safe }} <span>Pruebas de concepto</span></li>
-            <li class="section__grid-body-li">{{ check_icon | safe }} Validación de diseño</li>
-            <li class="section__grid-body-li">{{ check_icon | safe }} <span>Maquetas</span></li>
+            <li class="section__grid-body-li"><img src="{{ check_icon | url }}" alt="" loading="lazy" aria-hidden="true"> <span>Modelos funcionales</span></li>
+            <li class="section__grid-body-li"><img src="{{ check_icon | url }}" alt="" loading="lazy" aria-hidden="true"> <span>Pruebas de concepto</span></li>
+            <li class="section__grid-body-li"><img src="{{ check_icon | url }}" alt="" loading="lazy" aria-hidden="true"> Validación de diseño</li>
+            <li class="section__grid-body-li"><img src="{{ check_icon | url }}" alt="" loading="lazy" aria-hidden="true"> <span>Maquetas</span></li>
           </ul>
         </div>
       </div>
@@ -86,16 +88,16 @@ check_icon_blue: '<img src="/assets/pages/diseno-3d-perso/icons/shared/check-ico
       <div class="section__grid-print-item">
         <div class="section__grid-print-header">
           <div class="section__grid-print-icon section__grid-print-icon--wrench">
-            <img src="/assets/pages/diseno-3d-perso/icons/print-capabilities-section/wrench-icon.svg" alt="" aria-hidden="true" loading="lazy">
+            <img src="{{ '/assets/pages/diseno-3d-perso/icons/print-capabilities-section/wrench-icon.svg' | url }}" alt="" aria-hidden="true" loading="lazy">
           </div>
           <h3>Piezas Funcionales</h3>
         </div>
         <div class="section__grid-print-body">
           <ul class="section__grid-body-ul">
-            <li class="section__grid-body-li">{{ check_icon | safe }} <span>Engranajes</span></li>
-            <li class="section__grid-body-li">{{ check_icon | safe }} <span>Soportes</span></li>
-            <li class="section__grid-body-li">{{ check_icon | safe }} Herramientas</li>
-            <li class="section__grid-body-li">{{ check_icon | safe }} <span>Repuestos</span></li>
+            <li class="section__grid-body-li"><img src="{{ check_icon | url }}" alt="" loading="lazy" aria-hidden="true"> <span>Engranajes</span></li>
+            <li class="section__grid-body-li"><img src="{{ check_icon | url }}" alt="" loading="lazy" aria-hidden="true"> <span>Soportes</span></li>
+            <li class="section__grid-body-li"><img src="{{ check_icon | url }}" alt="" loading="lazy" aria-hidden="true"> Herramientas</li>
+            <li class="section__grid-body-li"><img src="{{ check_icon | url }}" alt="" loading="lazy" aria-hidden="true"> <span>Repuestos</span></li>
           </ul>
         </div>
       </div>
@@ -103,16 +105,16 @@ check_icon_blue: '<img src="/assets/pages/diseno-3d-perso/icons/shared/check-ico
       <div class="section__grid-print-item">
         <div class="section__grid-print-header">
           <div class="section__grid-print-icon section__grid-print-icon--palette">
-            <img src="/assets/pages/diseno-3d-perso/icons/print-capabilities-section/palette-icon.svg" alt="" aria-hidden="true" loading="lazy">
+            <img src="{{ '/assets/pages/diseno-3d-perso/icons/print-capabilities-section/palette-icon.svg' | url }}" alt="" aria-hidden="true" loading="lazy">
           </div>
           <h3>Arte y Decoración</h3>
         </div>
         <div class="section__grid-print-body">
           <ul class="section__grid-body-ul">
-            <li class="section__grid-body-li">{{ check_icon | safe }} <span>Esculturas</span></li>
-            <li class="section__grid-body-li">{{ check_icon | safe }} <span>Jarrones</span></li>
-            <li class="section__grid-body-li">{{ check_icon | safe }} Marcos</li>
-            <li class="section__grid-body-li">{{ check_icon | safe }} <span>Ornamentos</span></li>
+            <li class="section__grid-body-li"><img src="{{ check_icon | url }}" alt="" loading="lazy" aria-hidden="true"> <span>Esculturas</span></li>
+            <li class="section__grid-body-li"><img src="{{ check_icon | url }}" alt="" loading="lazy" aria-hidden="true"> <span>Jarrones</span></li>
+            <li class="section__grid-body-li"><img src="{{ check_icon | url }}" alt="" loading="lazy" aria-hidden="true"> Marcos</li>
+            <li class="section__grid-body-li"><img src="{{ check_icon | url }}" alt="" loading="lazy" aria-hidden="true"> <span>Ornamentos</span></li>
           </ul>
         </div>
       </div>
@@ -134,7 +136,7 @@ check_icon_blue: '<img src="/assets/pages/diseno-3d-perso/icons/shared/check-ico
       <div class="section-material__wrapper section-material__wrapper--green">
         <div class="section-material__header">
           <div class="section-material__icon section-material__icon--green">
-            <img src="/assets/pages/diseno-3d-perso/icons/material-section/layers-icon.svg" alt="" aria-hidden="true" loading="lazy">
+            <img src="{{ '/assets/pages/diseno-3d-perso/icons/material-section/layers-icon.svg' | url }}" alt="" aria-hidden="true" loading="lazy">
           </div>
           <h3 class="section-material__title">PLA Premium</h3>
           <p class="section-material__text">Ideal para prototipos, decoración y proyectos generales</p>
@@ -145,17 +147,17 @@ check_icon_blue: '<img src="/assets/pages/diseno-3d-perso/icons/shared/check-ico
           </p>
           <div class="section-material__body-features">
             <div class="section-material__body-characteristics">
-              <h4>{{ check_icon | safe }} Características</h4>
+              <h4><img src="{{ check_icon | url }}" alt="" loading="lazy" aria-hidden="true"> Características</h4>
               <ul>
-                <li>{{ check_icon | safe}} Acabado suave</li>
-                <li>{{ check_icon | safe}} Biodegradable</li>
-                <li>{{ check_icon | safe}} Sin olores</li>
-                <li>{{ check_icon | safe}} Fácil impresión</li>
+                <li><img src="{{ check_icon | url }}" alt="" loading="lazy" aria-hidden="true"> Acabado suave</li>
+                <li><img src="{{ check_icon | url }}" alt="" loading="lazy" aria-hidden="true"> Biodegradable</li>
+                <li><img src="{{ check_icon | url }}" alt="" loading="lazy" aria-hidden="true"> Sin olores</li>
+                <li><img src="{{ check_icon | url }}" alt="" loading="lazy" aria-hidden="true"> Fácil impresión</li>
               </ul>
             </div>
             <div class="section-material__body-colors">
               <h4>
-                <img src="/assets/pages/diseno-3d-perso/icons/material-section/palette-icon.svg" alt="" aria-hidden="true" loading="lazy">
+                <img src="{{ '/assets/pages/diseno-3d-perso/icons/material-section/palette-icon.svg' | url }}" alt="" aria-hidden="true" loading="lazy">
                 <span>Colores Disponibles</span>
               </h4>
               <div class="section-material__colors-grid">
@@ -183,7 +185,7 @@ check_icon_blue: '<img src="/assets/pages/diseno-3d-perso/icons/shared/check-ico
       <div class="section-material__wrapper section-material__wrapper--blue">
         <div class="section-material__header">
           <div class="section-material__icon section-material__icon--blue">
-            <img src="/assets/pages/diseno-3d-perso/icons/material-section/shield-icon.svg" alt="" aria-hidden="true" loading="lazy">
+            <img src="{{ '/assets/pages/diseno-3d-perso/icons/material-section/shield-icon.svg' | url }}" alt="" aria-hidden="true" loading="lazy">
           </div>
             <h3 class="section-material__title">PETG Premium</h3>
             <p class="section-material__text">Para proyectos que requieren resistencia y durabilidad superior</p>
@@ -193,17 +195,17 @@ check_icon_blue: '<img src="/assets/pages/diseno-3d-perso/icons/shared/check-ico
           <p class="section-material__body-text">Material de <strong>alta resistencia</strong> con excelente claridad y resistencia química. Perfecto para piezas funcionales que requieren durabilidad y transparencia.</p>
           <div class="section-material__body-features">
             <div class="section-material__body-characteristics">
-              <h4>{{ check_icon_blue | safe }} Características</h4>
+              <h4><img src="{{ check_icon_blue | url }}" alt="" loading="lazy" aria-hidden="true"> Características</h4>
               <ul>
-                <li>{{ check_icon_blue | safe}} Alta resistencia</li>
-                <li>{{ check_icon_blue | safe}} Transparente</li>
-                <li>{{ check_icon_blue | safe}} Resistente químico</li>
-                <li>{{ check_icon_blue | safe}} Reciclable</li>
+                <li><img src="{{ check_icon_blue | url }}" alt="" loading="lazy" aria-hidden="true"> Alta resistencia</li>
+                <li><img src="{{ check_icon_blue | url }}" alt="" loading="lazy" aria-hidden="true"> Transparente</li>
+                <li><img src="{{ check_icon_blue | url }}" alt="" loading="lazy" aria-hidden="true"> Resistente químico</li>
+                <li><img src="{{ check_icon_blue | url }}" alt="" loading="lazy" aria-hidden="true"> Reciclable</li>
               </ul>
             </div>
             <div class="section-material__body-colors">
               <h4>
-                <img src="/assets/pages/diseno-3d-perso/icons/material-section/palette-icon.svg" alt="" aria-hidden="true" loading="lazy">
+                <img src="{{ '/assets/pages/diseno-3d-perso/icons/material-section/palette-icon.svg' | url }}" alt="" aria-hidden="true" loading="lazy">
                 <span>Colores Disponibles</span>
               </h4>
               <div class="section-material__colors-flex">
@@ -233,7 +235,7 @@ check_icon_blue: '<img src="/assets/pages/diseno-3d-perso/icons/shared/check-ico
       <div class="section-material__selection-wrapper">
         <div class="section-material__selection-card section-material__selection-card--green">
           <div class="section-material__selection-icon section-material__selection-icon--green">
-            <img src="/assets/pages/diseno-3d-perso/icons/material-section/layers-icon.svg" alt="" aria-hidden="true" loading="lazy">
+            <img src="{{ '/assets/pages/diseno-3d-perso/icons/material-section/layers-icon.svg' | url }}" alt="" aria-hidden="true" loading="lazy">
           </div>
           <h3>Elige PLA si necesitas:</h3>
           <ul>
@@ -246,7 +248,7 @@ check_icon_blue: '<img src="/assets/pages/diseno-3d-perso/icons/shared/check-ico
         </div>
         <div class="section-material__selection-card section-material__selection-card--blue">
           <div class="section-material__selection-icon section-material__selection-icon--blue">
-            <img src="/assets/pages/diseno-3d-perso/icons/material-section/shield-icon.svg" alt="" aria-hidden="true" loading="lazy">
+            <img src="{{ '/assets/pages/diseno-3d-perso/icons/material-section/shield-icon.svg' | url }}" alt="" aria-hidden="true" loading="lazy">
           </div>
           <h3>Elige PETG si necesitas:</h3>
           <ul>
@@ -276,7 +278,7 @@ check_icon_blue: '<img src="/assets/pages/diseno-3d-perso/icons/shared/check-ico
           <div class="printing__process-number">01</div>
           <div class="printing__process-text">
             <div class="printing__process-header">
-              <img src="/assets/pages/diseno-3d-perso/icons/printing-section/bulb-icon.svg" alt="" aria-hidden="true" loading="lazy">
+              <img src="{{ '/assets/pages/diseno-3d-perso/icons/printing-section/bulb-icon.svg' | url }}" alt="" aria-hidden="true" loading="lazy">
               <h3>Envía tu Idea</h3>
             </div>
             <p class="printing__process-paragraph">
@@ -289,7 +291,7 @@ check_icon_blue: '<img src="/assets/pages/diseno-3d-perso/icons/shared/check-ico
           <div class="printing__process-number">02</div>
           <div class="printing__process-text">
             <div class="printing__process-header">
-              <img src="/assets/pages/diseno-3d-perso/icons/printing-section/layers-icon.svg" alt="" aria-hidden="true" loading="lazy">
+              <img src="{{ '/assets/pages/diseno-3d-perso/icons/printing-section/layers-icon.svg' | url }}" alt="" aria-hidden="true" loading="lazy">
               <h3>Diseño y Optimización</h3>
             </div>
             <p class="printing__process-paragraph">
@@ -302,7 +304,7 @@ check_icon_blue: '<img src="/assets/pages/diseno-3d-perso/icons/shared/check-ico
           <div class="printing__process-number">03</div>
           <div class="printing__process-text">
             <div class="printing__process-header">
-              <img src="/assets/pages/diseno-3d-perso/icons/printing-section/palette-icon.svg" alt="" aria-hidden="true" loading="lazy">
+              <img src="{{ '/assets/pages/diseno-3d-perso/icons/printing-section/palette-icon.svg' | url }}" alt="" aria-hidden="true" loading="lazy">
               <h3>Selección de Material</h3>
             </div>
             <p class="printing__process-paragraph">
@@ -315,7 +317,7 @@ check_icon_blue: '<img src="/assets/pages/diseno-3d-perso/icons/shared/check-ico
           <div class="printing__process-number">04</div>
           <div class="printing__process-text">
             <div class="printing__process-header">
-              <img src="/assets/pages/diseno-3d-perso/icons/printing-section/printer-icon.svg" alt="" aria-hidden="true" loading="lazy">
+              <img src="{{ '/assets/pages/diseno-3d-perso/icons/printing-section/printer-icon.svg' | url }}" alt="" aria-hidden="true" loading="lazy">
               <h3>Impresión de Calidad</h3>
             </div>
             <p class="printing__process-paragraph">
@@ -328,7 +330,7 @@ check_icon_blue: '<img src="/assets/pages/diseno-3d-perso/icons/shared/check-ico
           <div class="printing__process-number">05</div>
           <div class="printing__process-text">
             <div class="printing__process-header">
-              <img src="/assets/pages/diseno-3d-perso/icons/printing-section/package-icon.svg" alt="" aria-hidden="true" loading="lazy">
+              <img src="{{ '/assets/pages/diseno-3d-perso/icons/printing-section/package-icon.svg' | url }}" alt="" aria-hidden="true" loading="lazy">
               <h3>Acabado y Entrega</h3>
             </div>
             <p class="printing__process-paragraph">
@@ -341,7 +343,7 @@ check_icon_blue: '<img src="/assets/pages/diseno-3d-perso/icons/shared/check-ico
 
       <div class="printing__request">
         <div class="printing__request-image">
-          <img src="/assets/pages/diseno-3d-perso/images/print1.jpeg" alt="" loading="lazy">
+          <img src="{{ '/assets/pages/diseno-3d-perso/images/print1.jpeg' | url }}" alt="" loading="lazy">
         </div>
 
         <form class="printing__request-form" action="#">

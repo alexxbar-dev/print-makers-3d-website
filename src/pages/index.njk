@@ -7,7 +7,7 @@ styles:
   - /styles/components/contact-cta.css
   - /styles/components/benefits.css
 
-script: '<script src="/js/pages/index.js" defer></script>'
+script: '/js/pages/index.js'
 
 modifier: 'inicio'
 hero:
@@ -18,26 +18,28 @@ hero:
   showbottoms: true
   button1: 'Solicita una cotización'
   button2: 'Ver portafolio'
-  image: '<img src="/assets/pages/index/images/printmakers3dcuadrada.webp" alt="impresión 3D ">'
-  
+  image: 
+    src: '/assets/pages/index/images/printmakers3dcuadrada.webp'
+    alt: 'Impresora 3D impriiendo el logo de Print Makers 3D'
+
 benefits:
   title: '¿Por qué elegirnos?'
   mainDescription: 'Comprometidos con la calidad, la innovación y la satisfacción del cliente. Nuestro equipo de expertos está listo para llevar tus proyectos al siguiente nivel.'
   items:
     - subtitle: 'Rapidez'
       description: 'Tiempos de entrega optimizados sin comprometer la calidad'
-      icon: '<img src="/assets/pages/index/icons/benefits-section/clock-icon.svg" alt="" aria-hidden="true" loading="lazy">'
+      icon: '/assets/pages/index/icons/benefits-section/clock-icon.svg' 
     - subtitle: 'Precisión'
       description: 'Tolerancias mínimas y acabados de alta calidad en cada proyecto'
-      icon: '<img src="/assets/pages/index/icons/benefits-section/target-icon.svg" alt="" aria-hidden="true" loading="lazy">'
+      icon: '/assets/pages/index/icons/benefits-section/target-icon.svg'
     - subtitle: 'Validación 3D'
       description: 'Prototipado y validación antes de la fabricación final'
-      icon: '<img src="/assets/pages/index/icons/benefits-section/checks-icon.svg" alt="" aria-hidden="true" loading="lazy">'
+      icon: '/assets/pages/index/icons/benefits-section/checks-icon.svg'
     - subtitle: 'Atención personalizada'
       description: 'Acompañamiento completo desde la idea hasta el producto final'
-      icon: '<img src="/assets/pages/index/icons/benefits-section/users-icon.svg" alt="" aria-hidden="true"" loading="lazy">'
+      icon: '/assets/pages/index/icons/benefits-section/users-icon.svg'
 
-maximizeIcon: '<img src="/assets/pages/index/icons/portfolio-section/maximize-icon.svg" alt="" aria-hidden="true" loading="lazy">'
+maximizeIcon: '/assets/pages/index/icons/portfolio-section/maximize-icon.svg'
 ---
 
 <section class="services section__outer ">
@@ -52,7 +54,7 @@ maximizeIcon: '<img src="/assets/pages/index/icons/portfolio-section/maximize-ic
     <div class="services__card services__card--blue">
       <div class="services__card-header">
         <div class="services__card-icon">
-          <img src="/assets/pages/index/icons/services-section/gear2-blue-icon.svg" alt="" loading="lazy" aria-hidden="true">
+          <img src="{{ '/assets/pages/index/icons/services-section/gear2-blue-icon.svg' | url }}" alt="" loading="lazy" aria-hidden="true">
         </div>
         <h3 class="services__card-title">Moldes Industriales</h3>
       </div>
@@ -60,12 +62,12 @@ maximizeIcon: '<img src="/assets/pages/index/icons/portfolio-section/maximize-ic
         Fabricación de moldes personalizados de alta precisión para la industria de botellas plásticas.
       </p>
       <ul class="services__card-list">
-        <li><img src="/assets/pages/index/icons/services-section/cad-icon.svg" alt="" aria-hidden="true" loading="lazy">Diseño CAD</li>
-        <li><img src="/assets/pages/index/icons/services-section/gear-icon.svg" alt=""aria-hidden="true" loading="lazy">Mecanizado CNC
+        <li><img src="{{ '/assets/pages/index/icons/services-section/cad-icon.svg' | url }}" alt="" aria-hidden="true" loading="lazy">Diseño CAD</li>
+        <li><img src="{{ '/assets/pages/index/icons/services-section/gear-icon.svg' | url }}" alt=""aria-hidden="true" loading="lazy">Mecanizado CNC
         </li>
-        <li><img src="/assets/pages/index/icons/services-section/target-icon.svg" alt="" aria-hidden="true" loading="lazy">Alta Precisión
+        <li><img src="{{ '/assets/pages/index/icons/services-section/target-icon.svg' | url }}" alt="" aria-hidden="true" loading="lazy">Alta Precisión
         </li>
-        <li><img src="/assets/pages/index/icons/services-section/wrench-icon.svg" alt="" aria-hidden="true" loading="lazy">Maquinaria
+        <li><img src="{{ '/assets/pages/index/icons/services-section/wrench-icon.svg' | url }}" alt="" aria-hidden="true" loading="lazy">Maquinaria
           Avanzada
         </li>
       </ul>
@@ -76,12 +78,12 @@ maximizeIcon: '<img src="/assets/pages/index/icons/portfolio-section/maximize-ic
       </p>
       <a href="#" class="services__card-button services__card-button--blue">Más información</a>
     </div>
-    
+
     <!-- Tarjeta Impresión 3D -->
     <div class="services__card services__card--green">
       <div class="services__card-header">
         <div class="services__card-icon">
-          <img src="/assets/pages/index/icons/services-section/printer-icon.svg" alt="" aria-hidden="true" loading="lazy">
+          <img src="{{ '/assets/pages/index/icons/services-section/printer-icon.svg' | url }}" alt="" aria-hidden="true" loading="lazy">
         </div>
         <h3 class="services__card-title">Impresión 3D Personalizada</h3>
       </div>
@@ -89,12 +91,12 @@ maximizeIcon: '<img src="/assets/pages/index/icons/portfolio-section/maximize-ic
         Servicios completos de diseño e impresión 3D para prototipos y piezas funcionales.
       </p>
       <ul class="services__card-list">
-        <li><img src="/assets/pages/index/icons/services-section/cube-icon.svg" alt="" aria-hidden="true" loading="lazy">Llaveros</li>
-        <li><img src="/assets/pages/index/icons/services-section/gear2-green-icon.svg" alt="" aria-hidden="true" loading="lazy">Piezas
+        <li><img src="{{ '/assets/pages/index/icons/services-section/cube-icon.svg' | url }}" alt="" aria-hidden="true" loading="lazy">Llaveros</li>
+        <li><img src="{{ '/assets/pages/index/icons/services-section/gear2-green-icon.svg' | url }}" alt="" aria-hidden="true" loading="lazy">Piezas
           Funcionales
         </li>
-        <li><img src="/assets/pages/index/icons/services-section/layers-icon.svg" alt="" aria-hidden="true" loading="lazy">Prototipos</li>
-        <li><img src="/assets/pages/index/icons/services-section/users-icon.svg" alt="" aria-hidden="true" loading="lazy">Ideas Personalizadas
+        <li><img src="{{ '/assets/pages/index/icons/services-section/layers-icon.svg' | url }}" alt="" aria-hidden="true" loading="lazy">Prototipos</li>
+        <li><img src="{{ '/assets/pages/index/icons/services-section/users-icon.svg' | url }}" alt="" aria-hidden="true" loading="lazy">Ideas Personalizadas
         </li>
       </ul>
       <p class="services__card-text-secondary">
@@ -120,9 +122,9 @@ maximizeIcon: '<img src="/assets/pages/index/icons/portfolio-section/maximize-ic
       <figure class="portfolio__card">
         <span class="portfolio__card-badge">Moldes Industriales</span>
         <div class="portfolio__card-wrapper">
-          <img src="/assets/pages/index/images/portfolio/molde01.jpg" alt="Molde para Botella de Agua" loading="lazy" class="portfolio__card-image">
+          <img src="{{ '/assets/pages/index/images/portfolio/molde01.jpg' | url }}" alt="Molde para Botella de Agua" loading="lazy" class="portfolio__card-image">
           <div class="portfolio__card-overlay">
-          {{ maximizeIcon | safe}}
+            <img src="{{ maximizeIcon | url }}" alt="" aria-hidden="true" loading="lazy">
           </div>
         </div>
         <figcaption class="portfolio__card-footer">
@@ -133,9 +135,9 @@ maximizeIcon: '<img src="/assets/pages/index/icons/portfolio-section/maximize-ic
       <figure class="portfolio__card">
         <span class="portfolio__card-badge">Impresión 3D</span>
         <div class="portfolio__card-wrapper">
-          <img src="/assets/pages/index/images/portfolio/socialMedia3D.webp" alt="Llaveros de redes sociales impresos en 3D" loading="lazy" class="portfolio__card-image">
+          <img src="{{ '/assets/pages/index/images/portfolio/socialMedia3D.webp' | url }}" alt="Llaveros de redes sociales impresos en 3D" loading="lazy" class="portfolio__card-image">
           <div class="portfolio__card-overlay">
-          {{ maximizeIcon | safe}}
+            <img src="{{ maximizeIcon | url }}" alt="" aria-hidden="true" loading="lazy">
           </div>
         </div>
         <figcaption class="portfolio__card-footer">Llaveros Personalizados</figcaption>
@@ -144,9 +146,9 @@ maximizeIcon: '<img src="/assets/pages/index/icons/portfolio-section/maximize-ic
       <figure class="portfolio__card">
         <span class="portfolio__card-badge">Moldes Industriales</span>
         <div class="portfolio__card-wrapper">
-          <img src="/assets/pages/index/images/portfolio/molde-render.webp" alt="Render de molde para botella deportiva" loading="lazy" class="portfolio__card-image">
+          <img src="{{ '/assets/pages/index/images/portfolio/molde-render.webp' | url }}" alt="Render de molde para botella deportiva" loading="lazy" class="portfolio__card-image">
           <div class="portfolio__card-overlay">
-          {{ maximizeIcon | safe}}
+            <img src="{{ maximizeIcon | url }}" alt="" aria-hidden="true" loading="lazy">
           </div>
         </div>
         <figcaption class="portfolio__card-footer">Molde para Botella Deportiva</figcaption>
@@ -155,9 +157,9 @@ maximizeIcon: '<img src="/assets/pages/index/icons/portfolio-section/maximize-ic
       <figure class="portfolio__card">
         <span class="portfolio__card-badge">Impresión 3D</span>
         <div class="portfolio__card-wrapper">
-          <img src="/assets/pages/index/images/portfolio/wheels-3d.jpg" alt="Llaveros de llantas echos en 3D" loading="lazy" class="portfolio__card-image">
+          <img src="{{ '/assets/pages/index/images/portfolio/wheels-3d.jpg' | url }}" alt="Llaveros de llantas echos en 3D" loading="lazy" class="portfolio__card-image">
           <div class="portfolio__card-overlay">
-          {{ maximizeIcon | safe}}
+            <img src="{{ maximizeIcon | url }}" alt="" aria-hidden="true" loading="lazy">
           </div>
         </div>
         <figcaption class="portfolio__card-footer">Llaveros echos en 3D</figcaption>
@@ -166,9 +168,9 @@ maximizeIcon: '<img src="/assets/pages/index/icons/portfolio-section/maximize-ic
       <figure class="portfolio__card">
         <span class="portfolio__card-badge">Moldes Industriales</span>
         <div class="portfolio__card-wrapper">
-          <img src="/assets/pages/index/images/portfolio/bottles.webp" alt="Botellas de agua" loading="lazy" class="portfolio__card-image">
+          <img src="{{ '/assets/pages/index/images/portfolio/bottles.webp' | url }}" alt="Botellas de agua" loading="lazy" class="portfolio__card-image">
           <div class="portfolio__card-overlay">
-          {{ maximizeIcon | safe}}
+            <img src="{{ maximizeIcon | url }}" alt="" aria-hidden="true" loading="lazy">
           </div>
         </div>
         <figcaption class="portfolio__card-footer">Muestras de botellas de agua </figcaption>
@@ -177,9 +179,9 @@ maximizeIcon: '<img src="/assets/pages/index/icons/portfolio-section/maximize-ic
       <figure class="portfolio__card">
         <span class="portfolio__card-badge">Impresión 3D</span>
         <div class="portfolio__card-wrapper">
-          <img src="/assets/pages/index/images/portfolio/prototipos3D.jpg" alt="Prototipos de piezas 3D" loading="lazy" class="portfolio__card-image">
+          <img src="{{ '/assets/pages/index/images/portfolio/prototipos3D.jpg' | url }}" alt="Prototipos de piezas 3D" loading="lazy" class="portfolio__card-image">
           <div class="portfolio__card-overlay">
-          {{ maximizeIcon | safe}}
+            <img src="{{ maximizeIcon | url }}" alt="" aria-hidden="true" loading="lazy">
           </div>
         </div>
         <figcaption class="portfolio__card-footer">Prototipos de Piezas 3D</figcaption>

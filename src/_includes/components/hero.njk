@@ -20,7 +20,7 @@
     </div>
     {% if hero.showImage%}
     <figure class="hero__image">
-      {{ hero.image | safe}}
+      <img src="{{ hero.image.src | url }}" alt="{{ hero.image.alt }}" loading="eager">
     </figure>
     {% endif %}
   </div>
