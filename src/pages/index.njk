@@ -16,8 +16,12 @@ hero:
   badge: 'Fabricación de Precisión'
   showImage: true
   showbottoms: true
-  button1: 'Solicita una cotización'
-  button2: 'Ver portafolio'
+  button1: 
+    text: 'Solicita una cotización'
+    link: '/contacto/index.html'
+  button2: 
+    text: 'Ver portafolio'
+    link: '/index.html#portfolio'
   image: 
     src: '/assets/pages/index/images/printmakers3dcuadrada.webp'
     alt: 'Impresora 3D impriiendo el logo de Print Makers 3D'
@@ -76,7 +80,7 @@ maximizeIcon: '/assets/pages/index/icons/portfolio-section/maximize-icon.svg'
         durabilidad en
         cada proyecto.
       </p>
-      <a href="#" class="services__card-button services__card-button--blue">Más información</a>
+      <a href="{{ '/servicios-industriales/index.html' | url }}" class="services__card-button services__card-button--blue">Más información</a>
     </div>
 
     <!-- Tarjeta Impresión 3D -->
@@ -104,7 +108,7 @@ maximizeIcon: '/assets/pages/index/icons/portfolio-section/maximize-icon.svg'
         concepto en piezas
         3D de alta calidad.
       </p>
-      <a href="#" class="services__card-button services__card-button--green">Solicitar diseño</a>
+      <a href="{{ '/diseno-3d-personalizado/index.html#printing__request' | url }}" class="services__card-button services__card-button--green">Solicitar diseño</a>
     </div>
   </div>
 </section>

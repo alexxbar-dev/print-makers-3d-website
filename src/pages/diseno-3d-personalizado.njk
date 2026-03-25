@@ -15,8 +15,12 @@ hero:
   badge: 'Fabricación Digital'
   showImage: true
   showbottoms: true
-  button1: 'Solicitar Impresión'
-  button2: 'Ver portafolio'
+  button1: 
+    text: 'Solicitar Impresión'
+    link: '/contacto/index.html'
+  button2: 
+    text: 'Ver materiales'
+    link: '/diseno-3d-personalizado/index.html#section-material'
   image: 
     src: "/assets/pages/diseno-3d-perso/images/llaveros3d.jpg"
     alt: "Llaveros echos por impresión 3D"
@@ -123,7 +127,7 @@ check_icon_blue: "/assets/pages/diseno-3d-perso/icons/shared/check-icon-blue.svg
   </div>
 </section>
 
-<section class="section__outer section-material">
+<section class="section__outer section-material" id="section-material">
   <div class="section__inner">
     <div class="section__text">
       <h2>Nuestro Material Especializado</h2>
@@ -341,7 +345,7 @@ check_icon_blue: "/assets/pages/diseno-3d-perso/icons/shared/check-icon-blue.svg
 
       </div>
 
-      <div class="printing__request">
+      <div class="printing__request" id="printing__request">
         <div class="printing__request-image">
           <img src="{{ '/assets/pages/diseno-3d-perso/images/print1.jpeg' | url }}" alt="" loading="lazy">
         </div>

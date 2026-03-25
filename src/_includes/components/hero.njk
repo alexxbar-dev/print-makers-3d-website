@@ -13,8 +13,8 @@
 
       {% if hero.showbottoms %}
       <div class="buttons-container buttons-container--{{ modifier }}">
-        <a href="/contacto/index.html" class="btn orange">{{ hero.button1 }}</a>
-        <a href="#portfolio" class="btn outline">{{ hero.button2 }}</a>
+        <a href="{{ hero.button1.link | url }}" class="btn orange">{{ hero.button1.text }}</a>
+        <a href="{{ hero.button2.link | url }}" class="btn outline">{{ hero.button2.text }}</a>
       </div>
       {% endif %}
     </div>
