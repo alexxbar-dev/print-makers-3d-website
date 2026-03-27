@@ -23,7 +23,7 @@ hero:
     link: '/diseno-3d-personalizado/index.html#section-material'
   image: 
     src: "/assets/pages/diseno-3d-perso/images/llaveros3d.jpg"
-    alt: "Llaveros echos por impresión 3D"
+    alt: "Llaveros echos por impresión 3D."
 
 benefits:
   title: '¿Por qué Elegir Nuestro Servicio?'
@@ -162,17 +162,17 @@ check_icon_blue: "/assets/pages/diseno-3d-perso/icons/shared/check-icon-blue.svg
             <div class="section-material__body-colors">
               <h4>
                 <img src="{{ '/assets/pages/diseno-3d-perso/icons/material-section/palette-icon.svg' | url }}" alt="" aria-hidden="true" loading="lazy">
-                <span>Colores Disponibles</span>
+                <span id="colors-title">Colores Disponibles</span>
               </h4>
-              <div class="section-material__colors-grid">
-                <div class="section-material__color section-material__color--red"></div>
-                <div class="section-material__color section-material__color--blue"></div>
-                <div class="section-material__color section-material__color--black"></div>
-                <div class="section-material__color section-material__color--white"></div>
-                <div class="section-material__color section-material__color--pink"></div>
-                <div class="section-material__color section-material__color--yellow"></div>
-                <div class="section-material__color section-material__color--purple"></div>
-                <div class="section-material__color section-material__color--gray"></div>
+              <div class="section-material__colors-grid" role="group" aria-labelledby="colors-title">
+                <div class="section-material__color section-material__color--red" role="img" aria-label="Rojo" tabindex="0"></div>
+                <div class="section-material__color section-material__color--blue" role="img" aria-label="Azul" tabindex="0"></div>
+                <div class="section-material__color section-material__color--black" role="img" aria-label="Negro" tabindex="0"></div>
+                <div class="section-material__color section-material__color--white" role="img" aria-label="Blanco" tabindex="0"></div>
+                <div class="section-material__color section-material__color--pink" role="img" aria-label="Rosa" tabindex="0"></div>
+                <div class="section-material__color section-material__color--yellow" role="img" aria-label="Amarillo" tabindex="0"></div>
+                <div class="section-material__color section-material__color--purple" role="img" aria-label="Morado" tabindex="0"></div>
+                <div class="section-material__color section-material__color--gray" role="img" aria-label="Gris"tabindex="0"></div>
               </div>
               <p class="section-material__colors-text">Más colores disponibles para que tu idea se vea como la imaginas</p>
             </div>
@@ -212,7 +212,7 @@ check_icon_blue: "/assets/pages/diseno-3d-perso/icons/shared/check-icon-blue.svg
                 <img src="{{ '/assets/pages/diseno-3d-perso/icons/material-section/palette-icon.svg' | url }}" alt="" aria-hidden="true" loading="lazy">
                 <span>Colores Disponibles</span>
               </h4>
-              <div class="section-material__colors-flex">
+              <div class="section-material__colors-flex" aria-hidden="true">
                 <div class="section-material__color section-material__color--white"></div>
                 <div class="section-material__color section-material__color--black"></div>
               </div>
@@ -347,7 +347,7 @@ check_icon_blue: "/assets/pages/diseno-3d-perso/icons/shared/check-icon-blue.svg
 
       <div class="printing__request" id="printing__request">
         <div class="printing__request-image">
-          <img src="{{ '/assets/pages/diseno-3d-perso/images/print1.jpeg' | url }}" alt="" loading="lazy">
+          <img src="{{ '/assets/pages/diseno-3d-perso/images/print1.jpeg' | url }}" alt="Impresora 3D creando un producto" loading="lazy">
         </div>
 
         <form class="printing__request-form" action="#">
