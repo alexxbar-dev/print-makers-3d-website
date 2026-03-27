@@ -16,7 +16,7 @@
     "industrial"
   ],
   "author": "Erick Barraza <alexxbarraza@outlook.com>",
-  "license": "Proprietary",
+  "license": "MIT",
   "type": "commonjs",
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2"
