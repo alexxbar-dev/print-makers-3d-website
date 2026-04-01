@@ -37,11 +37,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const input = document.getElementById('file');
 const fileNameDisplay = document.querySelector('.services-request__form-subtitleFile');
+const form = document.getElementById('contact-form');
+const defaultFileText = fileNameDisplay.textContent;
 
 input.addEventListener('change', () => {
   const archivos = Array.from(input.files);
   const nombres = archivos.map(file => file.name).join(', ');
 
   fileNameDisplay.textContent = archivos.length > 0
-    ? nombres : 'Planos, bocetos, imágenes, archivos CAD (opcional)';
+    ? nombres : defaultFileText;
+});
+
+form.addEventListener('reset', () => {
+  fileNameDisplay.textContent = defaultFileText;
 });
