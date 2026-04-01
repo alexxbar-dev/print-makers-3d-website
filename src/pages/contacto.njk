@@ -6,6 +6,9 @@ styles:
   - /styles/components/hero.css
   - /styles/components/contact-cta.css
 
+scripts: 
+  - '/js/shared/form-handler.js'
+
 modifier: 'contacto'
 hero:
   title: 'Hablanos de tu <span class="orange">proyecto</span>'
@@ -72,7 +75,7 @@ hero:
     </div>
 
     {# formulario #}
-    <form class="data-contact__form" action="#" method="POST">
+    <form class="data-contact__form" id="contact-form" action="https://formspree.io/f/mvzvqoga" method="POST">
       <div class="data-contact__form-text">
         <h3>Solicitar Cotización</h3>
         <p>Completa el formulario y nos pondremos en contacto contigo en menos de 24 horas.</p>
@@ -166,8 +169,7 @@ hero:
           </div>
           <div class="data-contact__form-checkbox-item ">
             <input type="checkbox" id="visit" name="visit">
-            <label for="visit">
-              Me intersa agendar una visita a sus instalaciones</label>
+            <label for="visit">Me interesa agendar una visita a sus instalaciones</label>
           </div>
           <div class="data-contact__form-checkbox-item">
             <input type="checkbox" id="newsletter" name="newsletter">
@@ -176,7 +178,10 @@ hero:
         </div>
 
         <div class="buttons-contact">
-          <button type="submit" class="btn-contact btn-contact--primary"><img src="{{ '/assets/pages/contacto/icons/data-contact-section/send-icon.svg' | url }}" alt="" aria-hidden="true">Enviar Solicitud</button>
+          <button type="submit" class="btn-contact btn-contact--primary" id="submit-btn-form">
+            <img src="{{ '/assets/pages/contacto/icons/data-contact-section/send-icon.svg' | url }}" alt="" aria-hidden="true">
+            Enviar Solicitud
+          </button>
           
           <button type="submit" class="btn-contact btn-contact--secondary"><img src="{{ '/assets/pages/contacto/icons/data-contact-section/calendar-icon.svg' | url }}" alt="" aria-hidden="true">Agendar Llamada</button>
         </div>

@@ -6,7 +6,9 @@ styles:
   - /styles/components/hero.css
   - /styles/components/contact-cta.css
 
-script: '/js/pages/servicios-industriales.js'
+scripts: 
+  - '/js/pages/servicios-industriales.js'
+  - '/js/shared/form-handler.js'
 
 modifier: 'servicios-industriales'
 
@@ -486,7 +488,7 @@ icons:
 
 <section class="section__outer services-request">
   <div class="section__inner">
-    <form action="#" class="services-request__form">
+    <form action="https://formspree.io/f/maqlbqwn" method="POST" class="services-request__form" id="contact-form">
       <div class="services-request__form-header">
         <h3>Solicitar Cotización Integral</h3>
         <p>Cuéntanos sobre tu proyecto y te proporcionaremos una solución completa</p>
@@ -538,7 +540,7 @@ icons:
           <input type="file" name="file" id="file" multiple accept=".pdf,.dwg,.dxf,.stl,.obj,.svg,.ai,.psd,.sldprt,.igs,.step,.png,.jpg,.jpeg">
         </div>
         <div class="services-request__form-button">
-          <button type="submit">Solicitar Cotización</button>
+          <button type="submit" id="submit-btn-form">Solicitar Cotización</button>
         </div>
       </div>
     </form>

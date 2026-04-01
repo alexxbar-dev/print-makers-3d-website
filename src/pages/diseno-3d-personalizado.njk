@@ -7,6 +7,8 @@ styles:
   - /styles/components/benefits.css
   - /styles/components/contact-cta.css
 
+scripts: 
+ - '/js/shared/form-handler.js'
 
 modifier: 'diseno-3d-perso'
 hero:
@@ -350,7 +352,7 @@ check_icon_blue: "/assets/pages/diseno-3d-perso/icons/shared/check-icon-blue.svg
           <img src="{{ '/assets/pages/diseno-3d-perso/images/print1.jpeg' | url }}" alt="Impresora 3D creando un producto" loading="lazy">
         </div>
 
-        <form class="printing__request-form" action="#">
+        <form class="printing__request-form" action="https://formspree.io/f/xjgpogbb" method="POST" id="contact-form">
           <div class="printing__form-header">
             <h3>Solicitar Impresión 3D</h3>
             <p>Cuéntanos qué quieres imprimir y te daremos una cotización</p>
@@ -394,7 +396,7 @@ check_icon_blue: "/assets/pages/diseno-3d-perso/icons/shared/check-icon-blue.svg
             </div>
 
             <div class="printing__form-button">
-              <button type="submit">Solicitar Cotización</button>
+              <button type="submit" id="submit-btn-form">Solicitar Cotización</button>
             </div>
           </div>
         </form>
