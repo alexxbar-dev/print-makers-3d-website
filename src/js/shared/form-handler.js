@@ -26,7 +26,7 @@ $form.addEventListener('submit', async (event) => {
       alert("¡Solicitud enviada con éxito!\n\nGracias por contactar a Print Makers 3D. Nos pondremos en contacto con usted a la brevedad.")
       $form.reset();
     } else {
-      errorData = await response.json();
+      let errorData = await response.json();
       alert("Error al enviar:\n" + errorData.errors.map(e => e.message).join(', ')
        + "\n\nEl envío de archivos está implementado correctamente en el frontend, " +
         "pero se encuentra deshabilitado en el backend debido a las limitaciones del plan gratuito de Formspree.\n" +
