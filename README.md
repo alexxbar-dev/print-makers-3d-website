@@ -42,6 +42,15 @@ Badges: `Node.js (.nvmrc)` · `Eleventy SSG` · `Lighthouse 90+`
 - Modal de portafolio con zoom controlado y bloqueo de scroll.
 - Tabs accesibles en servicios industriales con `role="tab"` y `role="tabpanel"`.
 - Input file con vista previa de nombres para solicitudes técnicas.
+- Formularios asíncronos con `fetch`, manejo de estados y alertas de éxito/error sin redirección.
+
+## Formularios Asíncronos
+
+- Servicio: **Formspree** como backend de envío.
+- Asincronía real: el `submit` se intercepta y se envía con `fetch`, evitando la redirección automática del servicio.
+- Mensajes propios: confirmación y error se muestran con `alert` controlado por el frontend.
+- Archivos: el formulario soporta adjuntos en el frontend; en el plan gratuito de Formspree el envío de archivos está limitado.
+- Código: `src/js/shared/form-handler.js`.
 
 ## Performance & A11y
 
