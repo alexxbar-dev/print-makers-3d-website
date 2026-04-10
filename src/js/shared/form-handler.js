@@ -26,12 +26,22 @@ $form.addEventListener('submit', async (event) => {
       alert("¡Solicitud enviada con éxito!\n\nGracias por contactar a Print Makers 3D. Nos pondremos en contacto con usted a la brevedad.")
       $form.reset();
     } else {
-      let errorData = await response.json();
-      alert("Error al enviar:\n" + errorData.errors.map(e => e.message).join(', ')
-       + "\n\nEl envío de archivos está implementado correctamente en el frontend, " +
-        "pero se encuentra deshabilitado en el backend debido a las limitaciones del plan gratuito de Formspree.\n" +
-        "Puedes enviar solo datos de texto.");
-      $form.reset();
+      const errorData = await response.json();
+      const messages = errorData.errors.map(e => e.message);
+
+      const isFileError = messages.some(
+        (msg) => msg.includes("File") || msg.includes("upload"),
+      );
+      
+      if (isFileError) {
+        alert("Error al enviar:\n" + messages.join(', ')
+       + "\n\nEl manejo de archivos es funcional en el código, pero está restringido por la cuota gratuita de la API de Formspree.\n" + "Puedes enviar solo datos de texto si quieres que el formulario se envíe con éxito.");
+        $form.reset();
+      } else {
+        alert("Error al enviar:\n" + messages.join(', ')
+        + "\nVerifica tus datos o intentalo más tarde.");
+      }
+      
     }
   } catch (error) {
     alert("Hubo un fallo de conexión. Por favor, verifique su internet e intente de nuevo.");
