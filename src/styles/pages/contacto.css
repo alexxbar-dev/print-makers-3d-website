@@ -246,6 +246,7 @@ p.data-contact__item-text-whatsapp {
     line-height: 1.6;
     transition: background-color 0.2s ease;
     white-space: nowrap;
+    cursor: pointer;
 }
 
 .btn-contact--primary {
@@ -259,15 +260,97 @@ p.data-contact__item-text-whatsapp {
 
 .btn-contact--secondary {
     background-color: transparent;
+    color: var(--color-primary-font-black);
 }
 
 .btn-contact--secondary:hover {
     background-color: #f5f3f3;
+    filter: brightness(0.9);
 }
 
 .btn-contact img {
     width: 18px;
     height: 18px;
+}
+
+.modal-call-wrapper {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-call-wrapper.is-active {
+    display: flex;
+}
+
+.modal-call-content {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+  width: 90%;
+  max-width: 500px;
+}
+
+.modal-call-content h4 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: var(--fs-h4);
+    color: var(--color-primary-font-black);
+}
+
+.close-modal {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius:50%;
+    border: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    transition: all 0.2s ease;
+}
+
+.close-modal:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    transform: rotate(90deg) scale(1.1);
+}
+
+.close-modal:active {
+  transform: scale(0.95);
+}
+
+.modal-date-picker {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 0.5rem;
+    border: 1px solid var(--color-border-grey);
+    font-family: inherit;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.modal-date-picker::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+}
+
+.modal-call-info {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: var(--color-font-p);
+    margin-top: 0;
 }
 
 

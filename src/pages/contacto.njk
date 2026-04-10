@@ -8,6 +8,7 @@ styles:
 
 scripts: 
   - '/js/shared/form-handler.js'
+  - '/js/pages/contacto.js'
 
 modifier: 'contacto'
 hero:
@@ -183,7 +184,23 @@ hero:
             Enviar Solicitud
           </button>
           
-          <button type="submit" class="btn-contact btn-contact--secondary"><img src="{{ '/assets/pages/contacto/icons/data-contact-section/calendar-icon.svg' | url }}" alt="" aria-hidden="true">Agendar Llamada</button>
+          <button type="button" class="btn-contact btn-contact--secondary" id="open-modal-btn"><img src="{{ '/assets/pages/contacto/icons/data-contact-section/calendar-icon.svg' | url }}" alt="" aria-hidden="true">Agendar Llamada</button>
+
+          <div id="call-scheduling-modal" class="modal-call-wrapper">
+            <div class="modal-call-content">
+              <button type="button" id="close-scheduling-modal" class="close-modal">&times;</button>
+      
+              <h4>Selecciona fecha y hora para tu llamada</h4>
+      
+              <input type="datetime-local" id="appointment-input" name="appointment_date_call" class="modal-date-picker">
+
+              <p class="modal-call-info">
+                Elige una fecha futura y con al menos 24 horas de anticipación.
+              </p>
+      
+              <button type="button" id="confirm-scheduling-date" class="btn-contact btn-contact--primary">Confirmar</button>
+            </div>
+          </div>
         </div>
         <p class="data-contact__form-terms">
           Al enviar este formulario, aceptas nuestros términos de privacidad y el uso de tus datos para contactarte sobre tu proyecto.
