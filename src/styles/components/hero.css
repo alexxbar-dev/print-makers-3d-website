@@ -59,12 +59,32 @@
   text-align: left;
 }
 
-.hero__badge--contacto {
-  background-color: #1cc4b9; /* variable de componente creo */
+.hero__badge:hover {
+  background-color: #b64d02; 
 }
 
-.hero__badge:hover {
-  background-color: #e45f00; /* variable de componente creo */
+.hero__badge--servicios-industriales {
+  background-color: #2563eb; 
+}
+
+.hero__badge--servicios-industriales:hover {
+  background-color: #1d4ed8; 
+}
+
+.hero__badge--contacto {
+  background-color: #07bdb1d9; 
+}
+
+.hero__badge--contacto:hover {
+  background-color: #07a197d9; 
+}
+
+.hero__badge--diseno-3d-perso {
+  background-color: #a875e6; 
+}
+
+.hero__badge--diseno-3d-perso:hover {
+  background-color: #8d5be0; 
 }
 
 .hero__title {
