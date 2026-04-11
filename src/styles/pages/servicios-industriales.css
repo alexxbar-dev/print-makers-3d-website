@@ -174,10 +174,17 @@
     justify-content: center;
     align-items: center;
     gap: 0.8rem;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: all 0.3s ease;
     cursor: pointer;
     color: var(--color-font-section-p);
 }
+
+.detailed-services__button:hover {
+    background-color: #c7c3c352;
+    color: var(--color-font-section);
+    box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.1);
+}
+
 
 .detailed-services__button svg {
     min-width: 2rem;
@@ -185,7 +192,9 @@
 
 .detailed-services__button.active {
 background-color: #fff;
-color: inherit;
+color: var(--color-font-section);
+cursor: default;
+box-shadow: none;
 }
 
 div.hidden {
