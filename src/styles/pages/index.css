@@ -89,6 +89,11 @@
   margin-top: auto;
   display: block;
   width: 100%;
+  transition: all 0.3s ease;
+}
+
+.services__card-button:active {
+  transform: scale(0.98);
 }
 
 .services__card-button--blue {
@@ -96,9 +101,17 @@
   color: var(--color-secundary-font-white);
 }
 
+.services__card-button--blue:hover {
+  background-color: #0e49c8;
+}
+
 .services__card-button--green {
   background-color: #16a34a;
   color: var(--color-secundary-font-white);
+}
+
+.services__card-button--green:hover {
+  background-color: #15803d;
 }
 
 

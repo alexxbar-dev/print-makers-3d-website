@@ -608,14 +608,17 @@ div.hidden {
     color: var(--color-secundary-font-white);
     border-radius: 0.5rem;
     border: none;
-    background: var(--background-gradient-servicios);
     cursor: pointer;
-    transition: filter 0.2s ease;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: #0d47a1;
+    transition: all 0.2s ease;
 }
 
 .services-request__form-button button:hover {
-    filter: brightness(0.80);
+    background-color: #0b3880;
+}
+
+.services-request__form-button button:active {
+    transform: scale(0.98);
 }
 
 

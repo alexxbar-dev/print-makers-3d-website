@@ -244,9 +244,18 @@ p.data-contact__item-text-whatsapp {
     align-items: center;
     gap: 1rem;
     line-height: 1.6;
-    transition: background-color 0.2s ease;
+    transition: all 0.2s ease;
     white-space: nowrap;
     cursor: pointer;
+}
+
+.btn-contact:active {
+    transform: scale(0.98);
+}
+
+.btn-contact:disabled {
+    transform: none !important;
+    cursor: not-allowed;
 }
 
 .btn-contact--primary {
@@ -267,6 +276,8 @@ p.data-contact__item-text-whatsapp {
     background-color: #f5f3f3;
     filter: brightness(0.9);
 }
+
+
 
 .btn-contact img {
     width: 18px;

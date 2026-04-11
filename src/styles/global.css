@@ -113,6 +113,10 @@ body {
   transform: scale(1.03);
 }
 
+.buttons-container a.btn:active {
+  transform: scale(0.98);
+}
+
 
 /* layout global de secciones */
 .section__outer{
