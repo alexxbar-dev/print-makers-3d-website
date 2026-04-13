@@ -7,25 +7,25 @@
       <strong>Print Makers 3D</strong>
     </a>
 
-    <button class="header__nav-toggle" aria-label="Abrir menú">
+    <button class="header__nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="primary-nav">
       <img src="{{ '/assets/components/header-nav/icons/align-center.svg' | url }}" alt="Icono de menú desplegable">
     </button>
 
-    <div class="header__overlay"></div>
+    <div class="header__overlay" aria-hidden="true"></div>
 
-    <nav class="header__nav" role="navigation" aria-label="Menú principal">
+    <nav class="header__nav" id="primary-nav" aria-label="Menú principal">
       <ul class="nav__list">
-        <li class="nav__item" role="menuitem">
-          <a href="{{ '/index.html' | url }}" class="nav__link {% if page.url == '/' %}activo{% endif %}" aria-current="page">Inicio</a>
+        <li class="nav__item">
+          <a href="{{ '/index.html' | url }}" class="nav__link {% if page.url == '/' %}activo{% endif %}" {% if page.url == '/' %}aria-current="page"{% endif %}>Inicio</a>
         </li>
-        <li class="nav__item" role="menuitem">
-          <a href="{{ '/servicios-industriales/index.html' | url }}" class="nav__link {% if page.url == '/servicios-industriales/' %}activo{% endif %}">Servicios Industriales</a>
+        <li class="nav__item">
+          <a href="{{ '/servicios-industriales/index.html' | url }}" class="nav__link {% if page.url == '/servicios-industriales/' %}activo{% endif %}" {% if page.url == '/servicios-industriales/' %}aria-current="page"{% endif %}>Servicios Industriales</a>
         </li>
-        <li class="nav__item" role="menuitem">
-          <a href="{{ '/diseno-3d-personalizado/index.html' | url }}" class="nav__link {% if page.url == '/diseno-3d-personalizado/' %}activo{% endif %}">Diseño 3D Personalizado</a>
+        <li class="nav__item">
+          <a href="{{ '/diseno-3d-personalizado/index.html' | url }}" class="nav__link {% if page.url == '/diseno-3d-personalizado/' %}activo{% endif %}" {% if page.url == '/diseno-3d-personalizado/' %}aria-current="page"{% endif %}>Diseño 3D Personalizado</a>
         </li>
-        <li class="nav__item" role="menuitem">
-          <a href="{{ '/contacto/index.html' | url }}" class="nav__link {% if page.url == '/contacto/' %}activo{% endif %}">Contacto</a>
+        <li class="nav__item">
+          <a href="{{ '/contacto/index.html' | url }}" class="nav__link {% if page.url == '/contacto/' %}activo{% endif %}" {% if page.url == '/contacto/' %}aria-current="page"{% endif %}>Contacto</a>
         </li>
       </ul>
     </nav>

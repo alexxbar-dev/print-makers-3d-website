@@ -247,6 +247,7 @@ p.data-contact__item-text-whatsapp {
     transition: all 0.2s ease;
     white-space: nowrap;
     cursor: pointer;
+    font-weight: 500;
 }
 
 .btn-contact:active {
@@ -259,7 +260,7 @@ p.data-contact__item-text-whatsapp {
 }
 
 .btn-contact--primary {
-    background-color: var(--color-phone);
+    background-color: #0F857B;
     color: var(--color-secundary-font-white);
 }
 

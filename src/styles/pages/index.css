@@ -106,12 +106,12 @@
 }
 
 .services__card-button--green {
-  background-color: #16a34a;
+  background-color: #10893A;
   color: var(--color-secundary-font-white);
 }
 
 .services__card-button--green:hover {
-  background-color: #15803d;
+  background-color: #107937;
 }
 
 

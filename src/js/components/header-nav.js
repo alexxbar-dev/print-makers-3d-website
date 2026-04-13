@@ -31,6 +31,8 @@ function toggleMenu() {
   navMenu.classList.toggle('active', isActive);
   overlay.classList.toggle('active', isActive);
   document.body.classList.toggle('no-scroll', isActive);
+  navToggle.setAttribute('aria-expanded', String(isActive));
+  navToggle.setAttribute('aria-label', isActive ? 'Cerrar menú' : 'Abrir menú');
 
   navToggle.innerHTML = isActive 
   ? '&times;' 
@@ -42,6 +44,8 @@ function closeMenu() {
   navMenu.classList.remove('active');
   navToggle.classList.remove('active');
   document.body.classList.remove('no-scroll');
+  navToggle.setAttribute('aria-expanded', 'false');
+  navToggle.setAttribute('aria-label', 'Abrir menú');
   navToggle.innerHTML = `${menuIcon?.outerHTML || ''}`; 
 }
 

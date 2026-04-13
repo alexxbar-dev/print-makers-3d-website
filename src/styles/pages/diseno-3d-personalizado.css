@@ -168,14 +168,15 @@
     border-radius: 999px;
     padding: 4px 12px;
     margin: 6px 0 0 0;
+    font-weight: 600;
 }
 
 .section-material__badge--green {
-    background-color: #22c55e;
+    background-color: #168841;
 }
 
 .section-material__badge--blue {
-    background-color: #007aff;
+    background-color: #0071F0;
 }
 
 
@@ -476,7 +477,7 @@
 .printing__process-number {
     width: 4.8rem;
     height: 4.8rem;
-    background-color: #a855f7;
+    background-color: #9E40F7;
     flex-shrink: 0;
     border-radius: 999rem;
     display: flex;
