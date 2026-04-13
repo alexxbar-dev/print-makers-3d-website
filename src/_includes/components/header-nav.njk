@@ -1,6 +1,6 @@
 <header class="header">
   <div class="header__inner">
-    <a href="{{ '/index.html' | url }}" class="logo__wrapper">
+    <a href="{{ '/' | url }}" class="logo__wrapper">
       <div class="logo__image">
         <img src="{{ '/assets/global/logo/print-logo200x200.webp' | url }}" alt="Logo de Print Makers 3D">
       </div>
@@ -16,16 +16,16 @@
     <nav class="header__nav" id="primary-nav" aria-label="Menú principal">
       <ul class="nav__list">
         <li class="nav__item">
-          <a href="{{ '/index.html' | url }}" class="nav__link {% if page.url == '/' %}activo{% endif %}" {% if page.url == '/' %}aria-current="page"{% endif %}>Inicio</a>
+          <a href="{{ '/' | url }}" class="nav__link {% if page.url == '/' %}activo{% endif %}" {% if page.url == '/' %}aria-current="page"{% endif %}>Inicio</a>
         </li>
         <li class="nav__item">
-          <a href="{{ '/servicios-industriales/index.html' | url }}" class="nav__link {% if page.url == '/servicios-industriales/' %}activo{% endif %}" {% if page.url == '/servicios-industriales/' %}aria-current="page"{% endif %}>Servicios Industriales</a>
+          <a href="{{ '/servicios-industriales/' | url }}" class="nav__link {% if page.url == '/servicios-industriales/' %}activo{% endif %}" {% if page.url == '/servicios-industriales/' %}aria-current="page"{% endif %}>Servicios Industriales</a>
         </li>
         <li class="nav__item">
-          <a href="{{ '/diseno-3d-personalizado/index.html' | url }}" class="nav__link {% if page.url == '/diseno-3d-personalizado/' %}activo{% endif %}" {% if page.url == '/diseno-3d-personalizado/' %}aria-current="page"{% endif %}>Diseño 3D Personalizado</a>
+          <a href="{{ '/diseno-3d-personalizado/' | url }}" class="nav__link {% if page.url == '/diseno-3d-personalizado/' %}activo{% endif %}" {% if page.url == '/diseno-3d-personalizado/' %}aria-current="page"{% endif %}>Diseño 3D Personalizado</a>
         </li>
         <li class="nav__item">
-          <a href="{{ '/contacto/index.html' | url }}" class="nav__link {% if page.url == '/contacto/' %}activo{% endif %}" {% if page.url == '/contacto/' %}aria-current="page"{% endif %}>Contacto</a>
+          <a href="{{ '/contacto/' | url }}" class="nav__link {% if page.url == '/contacto/' %}activo{% endif %}" {% if page.url == '/contacto/' %}aria-current="page"{% endif %}>Contacto</a>
         </li>
       </ul>
     </nav>
