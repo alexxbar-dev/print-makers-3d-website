@@ -20,7 +20,7 @@
     </div>
     {% if hero.showImage%}
     <figure class="hero__image">
-      <img src="{{ hero.image.src | url }}" alt="{{ hero.image.alt }}" loading="eager">
+      {% image hero.image.src, hero.image.alt, "(max-width: 600px) 100vw, 600px", [400, 800, 1200], true %}
     </figure>
     {% endif %}
   </div>
